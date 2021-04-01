@@ -20,6 +20,7 @@ jobs:
       - uses: actions/cache@v1
         with:
           path: src/node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('src/package-lock.json') }}
       - run: npm install
       - run: npm run build
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
