@@ -5,7 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 
 // core components
 
-function SectionComponents() {
+function AKBSectionComponents() {
   return (
     <>
       <div className="section section-components section-dark">
@@ -69,4 +69,4 @@ function SectionComponents() {
   );
 }
 
-export default SectionComponents;
+export default AKBSectionComponents;
