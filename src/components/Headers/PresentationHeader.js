@@ -35,8 +35,7 @@ function PresentationHeader() {
                 </div>
               </div>
               <h2 className="presentation-subtitle text-center">
-                Make your mark with a premium Bootstrap 4, React, React Hooks
-                and Reactstrap UI Kit!
+              Testing to see if this updated!
               </h2>
             </Container>
           </div>
