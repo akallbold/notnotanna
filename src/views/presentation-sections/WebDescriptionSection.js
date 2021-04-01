@@ -1,11 +1,7 @@
 import React from "react";
-
-// reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
-// core components
-
-function AKBSectionComponents() {
+function WebDescriptionSection() {
   return (
     <>
       <div className="section section-components section-dark">
@@ -51,15 +47,13 @@ function AKBSectionComponents() {
           </Col>
           <Col className="ml-auto mr-auto" lg="4" md="10">
             <Container className="basic-container">
-              <h3 className="title">I am a fullstack engineer!</h3>
-              <h6 className="category">The core elements of your website</h6>
+              <h3 className="title">Started in Web Development...</h3>
+              {/* <h6 className="category">The core elements of your website</h6> */}
               <h5 className="description">
-                We re-styled every Bootstrap 4 element to match the Paper Kit
-                style. All the Bootstrap 4 components that you need in a
-                development have been re-design with the new look. Besides the
-                numerous basic elements, we have also created additional
-                classes. All these items will help you take your project to the
-                next level.
+                I am a fullstack developer. 
+                Most of my experience is in React but I am always open to 
+                learning and embracing new frameworks and technologies.
+
               </h5>
             </Container>
           </Col>
@@ -69,4 +63,4 @@ function AKBSectionComponents() {
   );
 }
 
-export default AKBSectionComponents;
+export default WebDescriptionSection;

@@ -19,8 +19,9 @@ function AKBPresentationHeader() {
           <div className="content-center">
             <Container>
               <div className="title-brand">
-                <h1 className="presentation-title">Paper Kit React</h1>
-                <div className="type">PRO</div>
+                <h1 className="presentation-title"> 
+               Welcome to my site</h1>
+                <div style={{height:"40px"}}></div>
                 <div className="fog-low">
                   <img
                     alt="..."
@@ -34,9 +35,9 @@ function AKBPresentationHeader() {
                   />
                 </div>
               </div>
-              <h2 className="presentation-subtitle text-center">
+              {/* <h2 className="presentation-subtitle text-center">
               Testing to see if this updated!
-              </h2>
+              </h2> */}
             </Container>
           </div>
     

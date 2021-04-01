@@ -8,7 +8,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function AKBSectionSections() {
   return (
     <>
-      <div className="section section-sections section-gray">
+      <div className="section section-sections section-nude">
         <Container>
           <Col className="ml-auto mr-auto" md="8">
             <div className="section-description text-center">

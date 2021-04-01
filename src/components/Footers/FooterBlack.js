@@ -3,7 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row } from "reactstrap";
-
+import {constants} from "data/constants"
 // core components
 
 function FooterBlack() {
@@ -16,28 +16,28 @@ function FooterBlack() {
               <ul>
                 <li>
                   <a
-                    href="https://www.creative-tim.com?ref=pkpr-black-footer"
+                    href={constants.linkedinURL}
                     target="_blank"
                     className="mr-1"
                   >
-                    Creative Tim
+                    Message me on LinkedIn
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://blog.creative-tim.com/?ref=pkpr-black-footer"
+                  href={constants.linkedinURL}
                     target="_blank"
                     className="mr-1"
                   >
-                    Blog
+                 
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.creative-tim.com/license?ref=pkpr-black-footer"
+                         href={constants.linkedinURL}
                     target="_blank"
                   >
-                    Licenses
+                    
                   </a>
                 </li>
               </ul>

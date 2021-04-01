@@ -1,37 +1,44 @@
 import React from "react";
 
 // reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
 
-// core components
+import { Card, CardBody, CardTitle, Container, Row, Col, NavLink } from "reactstrap";
+import {constants} from "data/constants"
 
-function AKBectionOverview() {
+function FinalCardSection() {
+
   return (
     <>
-      <div className="section section-overview">
+      <div className="section section-overview section-nude">
         <Container fluid>
           <Row>
             <Col className="offset-md-2 text-center" md="8">
               <div className="space-top" />
-              <h2 className="title">Want more details?</h2>
+              <h2 className="title">A little bit about me</h2>
             </Col>
             <Container>
               <div className="space-top" />
               <Row>
                 <Col sm="3">
-                  <Card data-background="color" data-color="green">
+                <Link to="/work" target="_blank" tag={Link}>
+                  <Card data-background="color" data-color="green" >
+                 
                     <CardBody className="text-center">
                       <div className="card-icon">
                         <i className="nc-icon nc-money-coins" />
                       </div>
                       <CardTitle tag="h4">Work</CardTitle>
                       <p className="card-description">
-                        I have worked as a software engineer, project manager, and a product owner. This experience has given me an end to end perspective on bringing a product from idea to fruition. I am an engineer because I love coding, but have the mindset of a product owner. 
+                        {constants.aboutMeCards.work}
                       </p>
                     </CardBody>
+          
                   </Card>
+                  </Link>
                 </Col>
                 <Col sm="3">
+                <Link to="/education" target="_blank" tag={Link}>
                   <Card data-background="color" data-color="blue">
                     <CardBody className="text-center">
                       <div className="card-icon">
@@ -39,23 +46,26 @@ function AKBectionOverview() {
                       </div>
                       <CardTitle tag="h4">Education</CardTitle>
                       <p className="card-description">
-                        With both an undergrad degree and graduate degree in Business, I understand the relationship between the bottom line and technology. Engineers can achieve anything, but they need the resources to do so. I understand how to prioritize technological decisions and can identify and communicate technological cost/benefit tradeoffs.
+                      {constants.aboutMeCards.education}
                       </p>
                     </CardBody>
                   </Card>
+                  </Link>
                 </Col>
                 <Col sm="3">
-                  <Card data-background="color" data-color="purple">
+                <Link to="/certifications" target="_blank" tag={Link}>
+                  <Card data-background="color" data-color="purple" >
                     <CardBody className="text-center">
                       <div className="card-icon">
                         <i className="nc-icon nc-layout-11" />
                       </div>
                       <CardTitle tag="h4">Certifications</CardTitle>
                       <p className="card-description">
-                        Whichever technology I am working on, I seek to become certified. It's important to me to understand what the people behind the technology want me to know as well as being a part of that community.
+                        {constants.aboutMeCards.certifications}
                       </p>
                     </CardBody>
                   </Card>
+                  </Link>
                 </Col>
                 <Col sm="3">
                   <Card data-background="color" data-color="brown">
@@ -65,7 +75,7 @@ function AKBectionOverview() {
                       </div>
                       <CardTitle tag="h4">Walking</CardTitle>
                       <p className="card-description">
-                        For some people it's in the shower, for others its at Esalen. For me, I get my biggest ideas while I am out walking.
+                        {constants.aboutMeCards.walking}
                       </p>
                     </CardBody>
                   </Card>
@@ -79,4 +89,4 @@ function AKBectionOverview() {
   );
 }
 
-export default AKBectionOverview;
+export default FinalCardSection;
