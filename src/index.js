@@ -17,7 +17,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { HashRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -50,7 +50,7 @@ import TwitterRedesign from "views/examples/TwitterRedesign.js";
 // others
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
@@ -103,6 +103,6 @@ ReactDOM.render(
       />
       <Redirect to="/presentation" />
     </Switch>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
