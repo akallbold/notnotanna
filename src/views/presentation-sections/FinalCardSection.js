@@ -26,7 +26,7 @@ function FinalCardSection() {
                  
                     <CardBody className="text-center">
                       <div className="card-icon">
-                        <i className="nc-icon nc-money-coins" />
+                        <i className="nc-icon nc-badge" />
                       </div>
                       <CardTitle tag="h4">Work</CardTitle>
                       <p className="card-description">
@@ -42,7 +42,7 @@ function FinalCardSection() {
                   <Card data-background="color" data-color="blue">
                     <CardBody className="text-center">
                       <div className="card-icon">
-                        <i className="nc-icon nc-watch-time" />
+                        <i className="nc-icon nc-hat-3" />
                       </div>
                       <CardTitle tag="h4">Education</CardTitle>
                       <p className="card-description">
@@ -57,7 +57,7 @@ function FinalCardSection() {
                   <Card data-background="color" data-color="purple" >
                     <CardBody className="text-center">
                       <div className="card-icon">
-                        <i className="nc-icon nc-layout-11" />
+                        <i className="nc-icon nc-trophy" />
                       </div>
                       <CardTitle tag="h4">Certifications</CardTitle>
                       <p className="card-description">
@@ -71,7 +71,7 @@ function FinalCardSection() {
                   <Card data-background="color" data-color="brown">
                     <CardBody className="text-center">
                       <div className="card-icon">
-                        <i className="nc-icon nc-align-center" />
+                        <i className="nc-icon nc-bulb-63" />
                       </div>
                       <CardTitle tag="h4">Walking</CardTitle>
                       <p className="card-description">

@@ -33,7 +33,7 @@ function WorkPage() {
                   <div className="icon icon-danger">
                   <img
                     alt="BCG logo"
-                    src={require("assets/img/AWS-Developer-Associate-2020.png")}
+                    src={require("assets/img/BCG_logo.png")}
                     style={{height:"50%", width:"50%"}}
                   />
                   </div>
@@ -51,7 +51,7 @@ function WorkPage() {
                   <div className="icon icon-danger">
                   <img
                     alt="GCP Solutions Architect badge"
-                    src={require("assets/img/gcp_cloud_arch.png")}
+                    src={require("assets/img/hh.png")}
                     style={{height:"50%", width:"50%"}}
                   />
                   </div>
@@ -69,7 +69,7 @@ function WorkPage() {
                   <div className="icon icon-danger">
                   <img
                     alt="GCP Associate Cloud Engineer badge"
-                    src={require("assets/img/gcp_cloud_eng.png")}
+                    src={require("assets/img/Accenture-Logo.png")}
                     style={{height:"50%", width:"50%"}}
                   />                  </div>
                   <div className="description">
@@ -86,12 +86,12 @@ function WorkPage() {
                   <div className="icon icon-danger">
                   <img
                     alt="AWS Cloud Developer badge"
-                    src={require("assets/img/AWS-CloudPractitioner-2020.png")}
+                    src={require("assets/img/ml.png")}
                     style={{height:"50%", width:"50%"}}
                   />                 
                    </div>
                   <div className="description">
-                    <h4 className="info-title">Meryl Lynch</h4>
+                    <h4 className="info-title">Merrill Lynch</h4>
                     <p>
                     June 2010 - May 2011
                     </p>

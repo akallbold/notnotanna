@@ -42,7 +42,7 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-              <div className="details-text">Discover Page</div>
+              {/* <div className="details-text">Discover Page</div>
               <Card className="card-image">
                 <Link to="/discover" target="_blank">
                   <img
@@ -77,7 +77,7 @@ function FunStuffSection() {
                     src={require("assets/img/presentation-page/examples/settings.png")}
                   />
                 </Link>
-              </Card>
+              </Card> */}
             </Col>
             <Col md="4">
               <div className="details-text">Marcus Aurelius Haiku Generator</div>
@@ -98,7 +98,7 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-              <div className="details-text">Product Page</div>
+              {/* <div className="details-text">Product Page</div>
               <Card className="card-image">
                 <Link to="/product-page" target="_blank">
                   <img
@@ -124,8 +124,8 @@ function FunStuffSection() {
                     src={require("assets/img/presentation-page/examples/search.png")}
                   />
                 </Link>
-              </Card>
-              <div className="details-text">Error Page (404)</div>
+              </Card> */}
+              <div className="details-text">My favorite things</div>
               <Card className="card-image">
                 <Link to="/error-404" target="_blank">
                   <img
@@ -134,7 +134,7 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-              <div className="details-text">Add Product Page</div>
+              {/* <div className="details-text">Add Product Page</div>
               <Card className="card-image">
                 <Link to="/add-product" target="_blank">
                   <img
@@ -151,7 +151,7 @@ function FunStuffSection() {
                     src={require("assets/img/presentation-page/examples/about-us.png")}
                   />
                 </Link>
-              </Card>
+              </Card> */}
             </Col>
             <Col md="4">
               <div className="details-text">iOS Sticker App</div>
@@ -172,7 +172,7 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-              <div className="details-text">Landing Page</div>
+              {/* <div className="details-text">Landing Page</div>
               <Card className="card-image">
                 <Link to="/landing-page" target="_blank">
                   <img
@@ -195,7 +195,7 @@ function FunStuffSection() {
                   alt="..."
                   src={require("assets/img/presentation-page/examples/more-brown.png")}
                 />
-              </Card>
+              </Card> */}
             </Col>
           </Row>
         </Container>
