@@ -47,7 +47,6 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
 import Settings from "views/examples/Settings.js";
 import TwitterRedesign from "views/examples/TwitterRedesign.js";
-import MarcusHaikuMain from "projects/06_marcus_haiku/MarcusHaikuMain.js"
 import MainProjectViewContainer from 'projects/MainProjectViewContainer'
 import CertificationsPage from 'views/presentation-sections/CertificationsPage'
 import WorkPage from 'views/presentation-sections/WorkPage'

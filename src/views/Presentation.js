@@ -1,7 +1,6 @@
 import React from "react";
 import AKBPresentationHeader from "components/Headers/PresentationHeader-akb.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
-import AKBFooter from "components/Footers/AKBFooter.js";
 import WebDescriptionSection from "./presentation-sections/WebDescriptionSection.js";
 import FunStuffSection from "./presentation-sections/FunStuffSection.js";
 import MobileDescriptionSection from "./presentation-sections/MobileDescriptionSection.js";

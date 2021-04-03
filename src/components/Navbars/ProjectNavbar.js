@@ -4,18 +4,9 @@ import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  Button,
-  Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
-  NavItem,
-  Nav,
   Container,
-  UncontrolledTooltip,
 } from "reactstrap";
 // core components
 

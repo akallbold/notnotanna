@@ -1,24 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import { makeStyles } from "@material-ui/core/styles";
-// import Button from 
-import { meditationsBySyllable } from "./meditations";
-import MainProjectViewContainer from '../MainProjectViewContainer.js'
-import {syllableMapper,emptyHaiku,wordPicker,lineGenerator,randomNumberGenerator} from './haikuConstants'
-import { Button, FormGroup, Container, Row, Col } from "reactstrap";
-
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     flexGrow: 1,
-//     justifyContent: "center"
-//   },
-//   haikuContainer: {
-//     justifyContent: "center",
-//     width: "100%",
-//     height: "200px"
-//   }
-// }));
-
-
+import {emptyHaiku,lineGenerator} from './haikuConstants'
+import { Button,  Container} from "reactstrap";
 
 const MarcusHaikuMain = () => {
 
@@ -36,7 +18,6 @@ const MarcusHaikuMain = () => {
   return (
     <Container>
 
-    {/* <Col md="4">      */}
       <div className="typography-line">
               <blockquote className="blockquote">
                 <p className="mb-0">
@@ -59,8 +40,7 @@ const MarcusHaikuMain = () => {
        </Button>
             </div>
       
-    {/* </> */}
-    {/* </Col> */}
+
     </Container>
 
   );

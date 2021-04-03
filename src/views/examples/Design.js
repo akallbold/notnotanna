@@ -2,19 +2,14 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
   Card,
   CardBody,
-  FormGroup,
-  Form,
-  Input,
   Container,
   Row,
   Col,
 } from "reactstrap";
 
 // core components
-import DangerNavbar from "components/Navbars/DangerNavbar.js";
 import FooterWhite from "components/Footers/FooterWhite.js";
 
 function Design() {
@@ -293,10 +288,7 @@ don't have to
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/erik-lucatero-2.jpg")}
                               />
-                              {/* <div className="text">
-                                <span className="name">Tom Hanks</span>
-                                <div className="meta">Drawn on 23 Jan</div>
-                              </div> */}
+                 
                             </div>
                           </a>
                         </CardBody>
