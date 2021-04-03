@@ -29,6 +29,7 @@ jobs:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCS_SA_KEY }}
       - run: gsutil -m rsync -d -c -r . gs://$GCS_BUCKET
+      - run: cd notnotanna/ && gcloud app deploy
       - run: gsutil -m setmeta -h "Cache-Control:build, max-age=3600" gs://$GCS_BUCKET/**/*.html
       - run: gsutil -m setmeta -h "Cache-Control:build, max-age=31536000" gs://$GCS_BUCKET/build/static/js/*.js
       - run: gsutil -m setmeta -h "Cache-Control:build, max-age=31536000" gs://$GCS_BUCKET/build/static/css/*.css
