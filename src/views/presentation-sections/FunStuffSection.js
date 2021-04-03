@@ -21,6 +21,7 @@ function FunStuffSection() {
             <Col md="4">
             <a
                     href={constants.theHundredYearsURL}
+                    rel="noopener noreferrer"
                     target="_blank"
                     className="mr-1"
                   >
