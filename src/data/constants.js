@@ -5,5 +5,6 @@ export const constants={
         "education":"I studied business in undergrad (UCONN) and grad (Yale). I've learned that engineers can build anything, but they need the resources to do so. My superpower is being able to identify and communicate technological cost/benefit tradeoffs.",
         "certifications":"Whichever technology I am working on, I seek to become certified. It's important to me to understand what the people behind the technology want me to know as well as being a part of that community.",
         "walking":"For some people it's in the shower, for others its at Esalen. For me, I get my biggest ideas while I am out walking."
-    }
+    },
+    "theHundredYearsURL":"https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/"
 }

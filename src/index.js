@@ -76,6 +76,7 @@ ReactDOM.render(
         render={(props) => <EducationPage {...props} />}
       />
       <Route path="/meditations" render={(props) => <MainProjectViewContainer project="meditations" />} />
+      <Route path="/design" render={(props) => <MainProjectViewContainer project="design" />} />
 
 {/* their stuff */}
       <Route

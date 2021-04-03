@@ -17,7 +17,7 @@ import {
 import DangerNavbar from "components/Navbars/DangerNavbar.js";
 import FooterWhite from "components/Footers/FooterWhite.js";
 
-function Discover() {
+function Design() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("discover");
@@ -29,41 +29,21 @@ function Discover() {
   });
   return (
     <>
-      <DangerNavbar />
+      {/* <DangerNavbar /> */}
       <div className="wrapper">
         <div className="wrapper">
           <div className="main">
             <div className="section">
               <Container>
-              <Row>
-            <div className="title text-center">
-            <h2 className="discover-title">
-                      <small>See latest artwork</small>
-                    </h2> 
-            </div>
-          </Row>
                 <Row>
                   <Col className="ml-auto mr-auto text-center" md="6" xs="12">
-                    <h2 className="discover-title">
-                      <small>See latest artwork</small>
-                    </h2>
-                    <Form className="form-inline" role="search">
-                      <FormGroup>
-                        <Input
-                          className="border-input"
-                          placeholder="Search..."
-                          type="text"
-                        />
-                          
-                      </FormGroup>
-                      <Button
-                        className="btn-just-icon"
-                        color="default"
-                        type="submit"
-                      >
-                        <i className="fa fa-search" />
-                      </Button>
-                    </Form>
+                  <h2 className="title">Filling negative space when you don't have to</h2>
+              <h5 className="description">
+Filling negative space when you (really) 
+don't have to
+              </h5>
+                   
+                   <hr/>
                   </Col>
                 </Row>
                 <Row className="items-row">
@@ -85,10 +65,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/joe-gardner-2.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Jane Doe</span>
                                 <div className="meta">Drawn on 23 Nov</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -113,10 +93,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/erik-lucatero-2.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Tom Hanks</span>
                                 <div className="meta">Drawn on 23 Jan</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -141,10 +121,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/chet_faker_2.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Chet Faker</span>
                                 <div className="meta">Drawn on 20 Jan</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -171,10 +151,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Tom Hank</span>
                                 <div className="meta">Drawn on 23 Jan</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -199,10 +179,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Tom Banks</span>
                                 <div className="meta">Drawn on 23 Jan</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -227,10 +207,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/flume.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Flume</span>
                                 <div className="meta">Drawn on 4 Aug</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -257,10 +237,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/placeholder.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Tom Hanks</span>
                                 <div className="meta">Drawn on 23 Jan</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -285,10 +265,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/placeholder.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Banks</span>
                                 <div className="meta">Drawn on 3 Mar</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -313,10 +293,10 @@ function Discover() {
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/erik-lucatero-2.jpg")}
                               />
-                              <div className="text">
+                              {/* <div className="text">
                                 <span className="name">Tom Hanks</span>
                                 <div className="meta">Drawn on 23 Jan</div>
-                              </div>
+                              </div> */}
                             </div>
                           </a>
                         </CardBody>
@@ -344,4 +324,4 @@ function Discover() {
   );
 }
 
-export default Discover;
+export default Design;

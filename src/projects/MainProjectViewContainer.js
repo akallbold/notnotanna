@@ -10,6 +10,7 @@ import AKBPresentationHeader from "components/Headers/PresentationHeader-akb.js"
 import FooterBlack from "components/Footers/FooterBlack.js";
 // sections for this page
 import MarcusHaikuMain from 'projects/06_marcus_haiku/MarcusHaikuMain'
+import Design from "views/examples/Design";
 
 function MainProjectViewContainer(props) {
   document.documentElement.classList.remove("nav-open");
@@ -49,6 +50,7 @@ function MainProjectViewContainer(props) {
 <ProjectNavbar />
 {/* <br/> */}
       {props.project == "meditations" ?<MarcusHaikuMain/>:null}
+      {props.project == "design" ?<Design/>:null}
 </>
    
   );

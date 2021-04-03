@@ -1,3 +1,4 @@
+import { constants } from "data/constants";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Container, Row, Col } from "reactstrap";
@@ -19,7 +20,7 @@ function FunStuffSection() {
           <Row>
             <Col md="4">
             <a
-                    href="https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/"
+                    href={constants.theHundredYearsURL}
                     target="_blank"
                     className="mr-1"
                   >
@@ -163,9 +164,9 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-              <div className="details-text">Error Page (500)</div>
+              <div className="details-text">Design Pet Peeves</div>
               <Card className="card-image">
-                <Link to="/error-500" target="_blank">
+                <Link to="/design" target="_blank">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/examples/500.png")}
