@@ -12,7 +12,7 @@ import {
 
 function ProjectNavbar() {
   const [bodyClick, setBodyClick] = React.useState(false);
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  // const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -26,7 +26,7 @@ function ProjectNavbar() {
           onClick={() => {
             document.documentElement.classList.toggle("nav-open");
             setBodyClick(false);
-            setCollapseOpen(false);
+            // setCollapseOpen(false);
           }}
         />
       ) : null}

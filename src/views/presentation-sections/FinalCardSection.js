@@ -3,7 +3,7 @@ import React from "react";
 // reactstrap components
 import { Link } from "react-router-dom";
 
-import { Card, CardBody, CardTitle, Container, Row, Col, NavLink } from "reactstrap";
+import { Card, CardBody, CardTitle, Container, Row, Col} from "reactstrap";
 import {constants} from "data/constants"
 
 function FinalCardSection() {

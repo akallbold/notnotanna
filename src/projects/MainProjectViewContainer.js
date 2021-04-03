@@ -46,8 +46,8 @@ function MainProjectViewContainer(props) {
 
 <>
 <ProjectNavbar />
-      {props.project == "meditations" ?<MarcusHaikuMain/>:null}
-      {props.project == "design" ?<Design/>:null}
+      {props.project === "meditations" ?<MarcusHaikuMain/>:null}
+      {props.project === "design" ?<Design/>:null}
 </>
    
   );
