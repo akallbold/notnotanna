@@ -23,7 +23,7 @@ jobs:
           key: ${{ runner.os }}-js-${{ hashFiles('src/package-lock.json') }}
       - run: npm install
       - run: npm run build
-      - uses: GoogleCloudPlatform/google-github-actions/setup-gcloud
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           version: "276.0.0"
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
