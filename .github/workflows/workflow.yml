@@ -1,34 +1,34 @@
-# name: Website - GCP
-# on:
-#   push:
-#     branches:
-#       - master
-# env:
-#   GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
-# jobs:
-#   build:
-#     name: Build & Deploy
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v1
-#         with:
-#           ref: refs/heads/master
-#           fetch-depth: 1
-#       - uses: actions/setup-node@v1
-#         with:
-#           node-version: "13.x"
-#       - uses: actions/cache@v1
-#         with:
-#           path: src/node_modules
-#           key: ${{ runner.os }}-js-${{ hashFiles('src/package-lock.json') }}
-#       - run: npm install
-#       - run: npm run build
-#       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
-#         with:
-#           version: "276.0.0"
-#           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
-#           service_account_key: ${{ secrets.GCS_SA_KEY }}
-#       - run: gsutil -m rsync -d -c -r ./build gs://$GCS_BUCKET
-#       - run: gsutil -m setmeta -h "Cache-Control:build, max-age=3600" gs://$GCS_BUCKET/**/*.html
-#       - run: gsutil -m setmeta -h "Cache-Control:build, max-age=31536000" gs://$GCS_BUCKET/static/js/*.js
-#       - run: gsutil -m setmeta -h "Cache-Control:build, max-age=31536000" gs://$GCS_BUCKET/static/css/*.css
+name: Website - GCP
+on:
+  push:
+    branches:
+      - master
+env:
+  GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          ref: refs/heads/master
+          fetch-depth: 1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "13.x"
+      - uses: actions/cache@v1
+        with:
+          path: src/node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('src/package-lock.json') }}
+      - run: npm install
+      - run: npm run build
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          version: "276.0.0"
+          service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+          service_account_key: ${{ secrets.GCS_SA_KEY }}
+      - run: gsutil -m rsync -d -c -r . gs://$GCS_BUCKET
+      - run: gsutil -m setmeta -h "Cache-Control:build, max-age=3600" gs://$GCS_BUCKET/**/*.html
+      - run: gsutil -m setmeta -h "Cache-Control:build, max-age=31536000" gs://$GCS_BUCKET/build/static/js/*.js
+      - run: gsutil -m setmeta -h "Cache-Control:build, max-age=31536000" gs://$GCS_BUCKET/build/static/css/*.css
