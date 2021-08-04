@@ -5,9 +5,10 @@ import { Button } from "reactstrap";
 
 // core components
 
-function BlogPostHeader() {
+function BlogPostHeader(props) {
   let pageHeader = React.createRef();
-
+  const {data} = props
+  const {buttonText} = data
   React.useEffect(() => {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
@@ -29,7 +30,7 @@ function BlogPostHeader() {
         ref={pageHeader}
         style={{
           backgroundImage:
-            "url(" + require("assets/img/sections/uriel-soberanes.jpg") + ")",
+            "url(" + require("assets/img/Caffeine_Fix copy.png") + ")",
         }}
       >
         <div className="filter" />
@@ -41,12 +42,10 @@ function BlogPostHeader() {
             <Button
               className="btn-round"
               color="warning"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
+              href="https://apps.apple.com/app/id1501776587"
               size="lg"
             >
-              <i className="fa fa-share-alt mr-1 " />
-              Share Article
+              {buttonText? buttonText : "Download it here"}
             </Button>
           </div>
         </div>

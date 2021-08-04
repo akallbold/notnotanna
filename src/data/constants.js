@@ -6,5 +6,6 @@ export const constants={
         "certifications":"Whichever technology I am working on, I seek to become certified. It's important to me to understand what the people behind the technology want me to know as well as being a part of that community.",
         "walking":"For some people it's in the shower, for others its at Esalen. For me, I get my biggest ideas while I am out walking."
     },
-    "theHundredYearsURL":"https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/"
+    "theHundredYearsURL":"https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/",
+    "livewireURL":"https://livewire.com"
 }

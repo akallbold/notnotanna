@@ -32,6 +32,7 @@ import Home from "views/Presentation.js";
 import AboutUs from "views/examples/AboutUs.js";
 import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
+import BlogPostSticker from "views/examples/BlogPost-sticker.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Discover from "views/examples/Discover.js";
@@ -90,6 +91,7 @@ ReactDOM.render(
         render={(props) => <AddProduct {...props} />}
       />
 
+      <Route path="/blog-post/stickers" render={(props) => <BlogPostSticker {...props} />} />
       <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
       <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />

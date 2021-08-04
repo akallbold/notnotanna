@@ -34,6 +34,23 @@ function FunStuffSection() {
                   />
                 {/* </Link> */}
               </Card>
+             
+              </a>
+              <a
+                    href={constants.livewireURL}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="mr-1"
+                  >
+              <div className="details-text">Livewire Homepage</div>
+              <Card className="card-image card-hover-effect">
+                {/* <Link to="/twitter-redesign" target="_blank"> */}
+                  <img
+                    alt="livewire homepage"
+                    src={require("assets/img/livewire-homepage.png")}
+                  />
+                {/* </Link> */}
+              </Card>
               </a>
               <div className="details-text">Error Pages</div>
               <Card className="card-image">
@@ -157,8 +174,9 @@ function FunStuffSection() {
             </Col>
             <Col md="4">
               <div className="details-text">iOS Sticker App</div>
+              
               <Card className="card-image">
-                <Link to="/blog-posts" target="_blank">
+                <Link to="/blog-post/stickers" target="_blank">
                   <img
                     alt="Two octopi pair programming"
                     src={require("assets/img/Pair_Programming.png")}
