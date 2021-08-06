@@ -1,7 +1,6 @@
 import React from "react";
 
 // reactstrap components
-import { Badge, Button, Card, Media, Container, Row, Col } from "reactstrap";
 import data from "data/blogPostData.js"
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
