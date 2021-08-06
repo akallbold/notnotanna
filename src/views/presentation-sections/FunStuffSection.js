@@ -42,7 +42,7 @@ function FunStuffSection() {
                     target="_blank"
                     className="mr-1"
                   >
-              <div className="details-text">Livewire Homepage</div>
+              <div className="details-text">LiveWire Homepage</div>
               <Card className="card-image card-hover-effect">
                 {/* <Link to="/twitter-redesign" target="_blank"> */}
                   <img
