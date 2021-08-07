@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardBody, Container, Row, Col } from "reactstrap";
 
 // core components
-import ColorNavbar from "components/Navbars/ColorNavbar.js";
+import SimpleNav from "components/Navbars/SimpleNav.js";
 
 function Error404() {
   document.documentElement.classList.remove("nav-open");
@@ -18,7 +18,7 @@ function Error404() {
   });
   return (
     <>
-      <ColorNavbar />
+      <SimpleNav/>
       <div
         className="background-img"
         style={{
@@ -35,7 +35,7 @@ function Error404() {
               <p class="error-msg">The page you requested could not be found</p>
             </h1>
           </Row>
-          <div className="container-cards">
+          {/* <div className="container-cards">
             <Row>
               <h5 className="discover-pages text-center">You can discover:</h5>
               <br />
@@ -101,7 +101,7 @@ function Error404() {
                 </Row>
               </Container>
             </Row>
-          </div>
+          </div> */}
         </Container>
       </div>
     </>

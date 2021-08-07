@@ -26,32 +26,35 @@ import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 // pages
 import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import Sections from "views/Sections.js";
+// import NucleoIcons from "views/NucleoIcons.js";
+// import Sections from "views/Sections.js";
 import Home from "views/Presentation.js";
-import AboutUs from "views/examples/AboutUs.js";
-import AddProduct from "views/examples/AddProduct.js";
-import BlogPost from "views/examples/BlogPost.js";
-import BlogPostSticker from "views/examples/BlogPost-sticker.js";
-import BlogPosts from "views/examples/BlogPosts.js";
-import ContactUs from "views/examples/ContactUs.js";
-import Discover from "views/examples/Discover.js";
-import Ecommerce from "views/examples/Ecommerce.js";
-import Error404 from "views/examples/Error404.js";
-import Error422 from "views/examples/Error422.js";
-import Error500 from "views/examples/Error500.js";
-import LandingPage from "views/examples/LandingPage.js";
-import LoginPage from "views/examples/LoginPage.js";
-import ProductPage from "views/examples/ProductPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
-import Settings from "views/examples/Settings.js";
-import TwitterRedesign from "views/examples/TwitterRedesign.js";
+// import AboutUs from "views/examples/AboutUs.js";
+// import AddProduct from "views/examples/AddProduct.js";
+// import BlogPost from "views/examples/BlogPost.js";
+// import BlogPostSticker from "views/examples/BlogPost-sticker.js";
+// import BlogPosts from "views/examples/BlogPosts.js";
+// import ContactUs from "views/examples/ContactUs.js";
+// import Discover from "views/examples/Discover.js";
+// import Ecommerce from "views/examples/Ecommerce.js";
+// import Error404 from "views/examples/Error404.js";
+// import Error422 from "views/examples/Error422.js";
+// import Error500 from "views/examples/Error500.js";
+// import LandingPage from "views/examples/LandingPage.js";
+// import LoginPage from "views/examples/LoginPage.js";
+// import ProductPage from "views/examples/ProductPage.js";
+// import ProfilePage from "views/examples/ProfilePage.js";
+// import RegisterPage from "views/examples/RegisterPage.js";
+// import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
+// import Settings from "views/examples/Settings.js";
+// import TwitterRedesign from "views/examples/TwitterRedesign.js";
 import MainProjectViewContainer from 'projects/MainProjectViewContainer'
 import CertificationsPage from 'views/presentation-sections/CertificationsPage'
 import WorkPage from 'views/presentation-sections/WorkPage'
 import EducationPage from 'views/presentation-sections/EducationPage'
+import Stickers from 'views/examples/Stickers'
+import ErrorSummary from 'views/examples/ErrorSummary'
+import ErrorPage from 'views/examples/ErrorPage'
 // others
 
 ReactDOM.render(
@@ -68,8 +71,17 @@ ReactDOM.render(
         render={(props) => <CertificationsPage {...props} />}
       />
       <Route
+        path="/error-page"
+        render={(props) => <ErrorPage {...props} />}
+      />
+      <Route path="/error-summary" render={(props) => <ErrorSummary {...props} />} />
+      <Route
         path="/work"
         render={(props) => <WorkPage {...props} />}
+      />
+          <Route
+        path="/stickers"
+        render={(props) => <Stickers {...props} />}
       />
       <Route
         path="/education"
@@ -79,7 +91,7 @@ ReactDOM.render(
       <Route path="/design" render={(props) => <MainProjectViewContainer project="design" />} />
 
 {/* their stuff */}
-      <Route
+      {/* <Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
@@ -89,23 +101,23 @@ ReactDOM.render(
       <Route
         path="/add-product"
         render={(props) => <AddProduct {...props} />}
-      />
+      /> */}
 
-      <Route path="/blog-post/stickers" render={(props) => <BlogPostSticker {...props} />} />
-      <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
+      {/* <Route path="/blog-post/stickers" render={(props) => <BlogPostSticker {...props} />} /> */}
+      {/* <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
       <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/discover" render={(props) => <Discover {...props} />} />
       <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
       <Route path="/error-404" render={(props) => <Error404 {...props} />} />
       <Route path="/error-422" render={(props) => <Error422 {...props} />} />
-      <Route path="/error-500" render={(props) => <Error500 {...props} />} />
-      <Route
+      <Route path="/error-500" render={(props) => <Error500 {...props} />} /> */}
+      {/* <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
-      />
-      <Route path="/login-page" render={(props) => <LoginPage {...props} />} />
-      <Route
+      /> */}
+      {/* <Route path="/login-page" render={(props) => <LoginPage {...props} />} /> */}
+      {/* <Route
         path="/product-page"
         render={(props) => <ProductPage {...props} />}
       />
@@ -125,7 +137,7 @@ ReactDOM.render(
       <Route
         path="/twitter-redesign"
         render={(props) => <TwitterRedesign {...props} />}
-      />
+      /> */}
       {/* home route */}
         <Route
         path="/"

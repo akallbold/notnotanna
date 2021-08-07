@@ -41,7 +41,7 @@ function LandingPageHeader() {
                 Start designing your landing page here.
               </h3>
               <br />
-              <Button
+              {/* <Button
                 className="btn-round mr-1"
                 color="neutral"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?ref=creativetim"
@@ -49,7 +49,7 @@ function LandingPageHeader() {
               >
                 <i className="fa fa-play" />
                 Watch video
-              </Button>
+              </Button> */}
               <Button
                 className="btn-round"
                 color="neutral"

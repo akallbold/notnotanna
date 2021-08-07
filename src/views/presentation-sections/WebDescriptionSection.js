@@ -47,13 +47,14 @@ function WebDescriptionSection() {
           </Col>
           <Col className="ml-auto mr-auto" lg="4" md="10">
             <Container className="basic-container">
-              <h3 className="title">Started in Web Development...</h3>
+              <h3 className="title">Fullstack Developer 👩‍💻</h3>
               {/* <h6 className="category">The core elements of your website</h6> */}
               <h5 className="description">
-                I am a fullstack developer. 
-                Most of my experience is in React but I am always open to 
-                learning and embracing new frameworks and technologies.
-
+                I am a fullstack developer, with a passion in emerging tech. 
+                My experience as an engineer at a consulting firm has 
+                provided me with the opportunity to work in many different 
+                industries and to explore the spectrum between rapid prototyping to 
+                production level applications.
               </h5>
             </Container>
           </Col>

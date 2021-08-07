@@ -37,7 +37,7 @@ function Presentation() {
       {/* <AKBColorNavbar /> */}
       <AKBPresentationHeader />
       <WebDescriptionSection />
-      <MobileDescriptionSection />
+      {/* <MobileDescriptionSection /> */}
       <FinalCardSection />
       <FunStuffSection />    
       {/* <AKBFooter/> */}
