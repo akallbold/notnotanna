@@ -1,23 +1,23 @@
 import React from "react";
-import { Link,useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  Button,
+  // Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // UncontrolledDropdown,
   NavbarBrand,
   Navbar,
-  NavItem,
+  // NavItem,
   Nav,
   Container,
-  UncontrolledTooltip,
+  // UncontrolledTooltip,
 } from "reactstrap";
 // core components
 
@@ -48,7 +48,7 @@ function SimpleNav(props) {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
-  const history = useHistory()
+  // const history = useHistory()
   return (
     <>
       {bodyClick ? (

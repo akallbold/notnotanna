@@ -1,4 +1,3 @@
-import { constants } from "data/constants";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Container, Row, Col } from "reactstrap";

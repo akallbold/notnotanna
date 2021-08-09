@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Card, CardBody, Container, Row, Col } from "reactstrap";
+import {  Container, Row } from "reactstrap";
 import {useLocation} from 'react-router-dom'
 // core components
 import SimpleNav from "components/Navbars/SimpleNav.js";

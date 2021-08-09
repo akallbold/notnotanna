@@ -6,9 +6,9 @@ import { Card, CardBody, Container, Row, Col } from "reactstrap";
 // core components
 
 import SimpleNav from "components/Navbars/SimpleNav";
-import ErrorPage from "views/examples/ErrorPage";
+// import ErrorPage from "views/examples/ErrorPage";
 
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function ErrorSummary() {
   document.documentElement.classList.remove("nav-open");

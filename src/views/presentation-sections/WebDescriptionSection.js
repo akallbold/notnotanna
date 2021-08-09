@@ -47,7 +47,7 @@ function WebDescriptionSection() {
           </Col>
           <Col className="ml-auto mr-auto" lg="4" md="10">
             <Container className="basic-container">
-              <h3 className="title">Fullstack Developer 👩‍💻</h3>
+              <h3 className="title">Fullstack Developer <span aria-label="women at computer" role='img'>👩‍💻</span></h3>
               {/* <h6 className="category">The core elements of your website</h6> */}
               <h5 className="description">
                 I am a fullstack developer, with a passion in emerging tech. 
