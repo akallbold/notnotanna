@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {emptyHaiku,lineGenerator} from './haikuConstants'
 import { Button,  Container} from "reactstrap";
+import SimpleNav from "components/Navbars/SimpleNav.js";
+import './styles.css';
 
 const MarcusHaikuMain = () => {
 
@@ -14,11 +16,18 @@ const MarcusHaikuMain = () => {
     currentHaiku.lineThree = lineGenerator(5);
     setHaiku({ ...currentHaiku });
   };
+  const containerHeights ={small:'10px', medium:'20px', large:'50px'}
 
   return (
-    <Container>
+    <>   
+    <Container className="marcus-container" >
+    
+    <SimpleNav />
+    <div style={{height: containerHeights.large}}/>
 
-      <div className="typography-line">
+      <div 
+      class="marcus-quote-box"
+      >
               <blockquote className="blockquote">
                 <p className="mb-0">
                  {haiku.lineOne}
@@ -28,21 +37,22 @@ const MarcusHaikuMain = () => {
                   {haiku.lineThree}
                  
                 </p>
-                <br />
+                <div style={{height: containerHeights.small}}/>
                 <footer className="blockquote-footer">
                   Random Marcus Aurelius haiku generator
                 </footer>
               </blockquote>
             </div>
-            <div cen>
+   
+            <div style={{height: containerHeights.small}}/>
             <Button onClick={haikuGenerator} class="btn-round mr-1 btn btn-outline-default" type="button" align-self="center">
          Generate new haiku
        </Button>
-            </div>
+ 
       
 
     </Container>
-
+</>
   );
 };
 

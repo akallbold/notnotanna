@@ -7,5 +7,5 @@ export const constants={
         "walking":"For some people it's in the shower, for others its at Esalen. For me, I get my biggest ideas while I am out walking."
     },
     "theHundredYearsURL":"https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/",
-    "livewireURL":"https://livewire.com"
+    "livewireURL":"https://www.livewire.com/"
 }

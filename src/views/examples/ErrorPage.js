@@ -18,7 +18,7 @@ function ErrorPage(props) {
   });
 
   const location = useLocation()  
-
+console.log("location.state", location.state)
   return (
     <>
       <SimpleNav/>
@@ -33,10 +33,30 @@ function ErrorPage(props) {
         <Container>
           <Row>
             <h1 class="title">
-             {location.state && location.state.code.code ? location.state.code : "YIKES"}
+             {location.state && location.state.code ? location.state.code : "YIKES"}
+             </h1>
               <br />
               <p class="error-msg">{location.state && location.state.text ? location.state.text : "An error loading the error? Oh the irony!"}</p>
-            </h1>
+              {location.state && location.state.link ? (
+             <div>
+             <br />
+              <a href={location.state.link} rel="noopener noreferrer">
+            <p>
+            Learn more here.
+            </p>
+            </a>
+            </div>
+              )
+              : null}
+           
+          </Row>
+
+          <Row >
+            <a href="http://en.wikipedia.org/wiki/Special:Random" rel="noopener noreferrer">
+            <h4>
+            Sorry this didn't work out. Make the most of it and learn something new today.
+            </h4>
+            </a>
           </Row>
         
         </Container>

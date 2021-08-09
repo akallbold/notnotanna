@@ -21,7 +21,7 @@ import {
 } from "reactstrap";
 // core components
 
-function SimpleNav() {
+function SimpleNav(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [bodyClick, setBodyClick] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -42,6 +42,7 @@ function SimpleNav() {
         setNavbarColor("navbar-transparent");
       }
     };
+
     window.addEventListener("scroll", updateNavbarColor);
     return function cleanup() {
       window.removeEventListener("scroll", updateNavbarColor);
@@ -66,8 +67,8 @@ function SimpleNav() {
         id="navbar-main"
       >
         <Container>
-          <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" to={'/'} tag={Link}>
+          <div className="navbar-translate" >
+            <NavbarBrand id="navbar-brand " to={'/'} tag={Link} style={{color:"black"}}>
               Back
             </NavbarBrand>
        

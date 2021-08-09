@@ -19,7 +19,7 @@ function FunStuffSection() {
           </Row>
           <Row>
             <Col md="4">
-            <a
+            {/* <a
                     href={constants.theHundredYearsURL}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -27,15 +27,15 @@ function FunStuffSection() {
                   >
               <div className="details-text">The Hundred Years</div>
               <Card className="card-image card-hover-effect">
-                {/* <Link to="/twitter-redesign" target="_blank"> */}
+                <Link to="/twitter-redesign" target="_blank"> 
                   <img
                     alt="Sad looking github sign"
                     src={require("assets/img/github-cover copy.JPG")}
                   />
-                {/* </Link> */}
+               </Link> 
               </Card>
              
-              </a>
+              </a> */}
           
               <div className="details-text">Error Pages</div>
               <Card className="card-image">
@@ -49,13 +49,14 @@ function FunStuffSection() {
            
             </Col>
             <Col md="4">
-            <a
+            {/* <a
                     href={constants.livewireURL}
                     rel="noopener noreferrer"
                     target="_blank"
                     className="mr-1"
-                  >
+                  > */}
               <div className="details-text">LiveWire Homepage</div>
+                  <Link to="/livewire-summary" target="_blank">
               <Card className="card-image card-hover-effect">
                 {/* <Link to="/twitter-redesign" target="_blank"> */}
                   <img
@@ -64,13 +65,14 @@ function FunStuffSection() {
                   />
                 {/* </Link> */}
               </Card>
-              </a>
+                  </Link>
+             
               <div className="details-text">Marcus Aurelius Haiku Generator</div>
               <Card className="card-image">
                 <Link to="/meditations" target="_blank">
                   <img
-                    alt="..."
-                    src={require("assets/img/presentation-page/examples/register.png")}
+                    alt="Marcus Aurelius"
+                    src={require("assets/img/marcus.jpg")}
                   />
                 </Link>
               </Card>
@@ -78,10 +80,10 @@ function FunStuffSection() {
              
               <div className="details-text">My favorite things</div>
               <Card className="card-image">
-                <Link to="/error-404" target="_blank">
+                <Link to="/favorite-things" target="_blank">
                   <img
-                    alt="..."
-                    src={require("assets/img/presentation-page/examples/404.png")}
+                    alt="Chef's Kiss"
+                    src={require("assets/img/kiss.png")}
                   />
                 </Link>
               </Card>

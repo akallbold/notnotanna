@@ -48,13 +48,16 @@ import Home from "views/Presentation.js";
 // import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
 // import Settings from "views/examples/Settings.js";
 // import TwitterRedesign from "views/examples/TwitterRedesign.js";
-import MainProjectViewContainer from 'projects/MainProjectViewContainer'
+// import MainProjectViewContainer from 'projects/MainProjectViewContainer'
 import CertificationsPage from 'views/presentation-sections/CertificationsPage'
 import WorkPage from 'views/presentation-sections/WorkPage'
 import EducationPage from 'views/presentation-sections/EducationPage'
 import Stickers from 'views/examples/Stickers'
 import ErrorSummary from 'views/examples/ErrorSummary'
 import ErrorPage from 'views/examples/ErrorPage'
+import LiveWireSummary from 'views/examples/LiveWireSummary'
+import MarcusHaikuMain from "projects/marcus_haiku/MarcusHaikuMain";
+import FavoriteThings from "projects/favorite_things/FavoriteThings";
 // others
 
 ReactDOM.render(
@@ -87,8 +90,10 @@ ReactDOM.render(
         path="/education"
         render={(props) => <EducationPage {...props} />}
       />
-      <Route path="/meditations" render={(props) => <MainProjectViewContainer project="meditations" />} />
-      <Route path="/design" render={(props) => <MainProjectViewContainer project="design" />} />
+      <Route path="/meditations" render={(props) => <MarcusHaikuMain {...props}/>} />
+      {/* <Route path="/design" render={(props) => <MainProjectViewContainer project="design" />} /> */}
+      <Route path="/livewire-summary" render={(props) => <LiveWireSummary  {...props}/>} />
+      <Route path="/favorite-things" render={(props) => <FavoriteThings  {...props}/>} />
 
 {/* their stuff */}
       {/* <Route
