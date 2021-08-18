@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Container, Row, Col } from "reactstrap";
+import { constants } from "data/constants";
 
 function FunStuffSection() {
   return (
@@ -48,23 +49,16 @@ function FunStuffSection() {
            
             </Col>
             <Col md="4">
-            {/* <a
-                    href={constants.livewireURL}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="mr-1"
-                  > */}
-              <div className="details-text">LiveWire Homepage</div>
-                  <Link to="/livewire-summary" target="_blank">
+      
+              <div className="details-text">LiveWire Homepage (professional project)</div>
+                  <a href={constants.livewireURL} target="_blank">
               <Card className="card-image card-hover-effect">
-                {/* <Link to="/twitter-redesign" target="_blank"> */}
                   <img
                     alt="livewire homepage"
                     src={require("assets/img/livewire-homepage.png")}
                   />
-                {/* </Link> */}
               </Card>
-                  </Link>
+                  </a>
              
               <div className="details-text">Marcus Aurelius Haiku Generator</div>
               <Card className="card-image">
@@ -92,7 +86,7 @@ function FunStuffSection() {
               <div className="details-text">iOS Sticker App</div>
               
               <Card className="card-image">
-                <Link to="/stickers" target="_blank">
+                <Link href="/stickers" target="_blank">
                   <img
                     alt="Two octopi pair programming"
                     src={require("assets/img/Pair_Programming.png")}
