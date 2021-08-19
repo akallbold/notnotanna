@@ -51,7 +51,7 @@ function FunStuffSection() {
             <Col md="4">
       
               <div className="details-text">LiveWire Homepage (professional project)</div>
-                  <a href={constants.livewireURL} target="_blank">
+                  <a href={constants.livewireURL} target="_blank" rel="noopener noreferrer">
               <Card className="card-image card-hover-effect">
                   <img
                     alt="livewire homepage"

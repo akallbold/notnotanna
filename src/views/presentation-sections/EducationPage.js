@@ -28,8 +28,8 @@ function EducationPage() {
                 <div className="info">
                   <div className="icon icon-danger">
                   <img
-                    alt="BCG logo"
-                    src={require("assets/img/AWS-Developer-Associate-2020.png")}
+                    alt="Yale logo"
+                    src={require("assets/img/yale.png")}
                     style={{height:"50%", width:"50%"}}
                   />
                   </div>
@@ -46,9 +46,9 @@ function EducationPage() {
                 <div className="info">
                   <div className="icon icon-danger">
                   <img
-                    alt="GCP Solutions Architect badge"
-                    src={require("assets/img/gcp_cloud_arch.png")}
-                    style={{height:"50%", width:"50%"}}
+                    alt="Flatiron School logo"
+                    src={require("assets/img/flatiron.png")}
+                    style={{width:"85%"}}
                   />
                   </div>
                   <div className="description">
@@ -64,9 +64,9 @@ function EducationPage() {
                 <div className="info">
                   <div className="icon icon-danger">
                   <img
-                    alt="GCP Associate Cloud Engineer badge"
-                    src={require("assets/img/gcp_cloud_eng.png")}
-                    style={{height:"50%", width:"50%"}}
+                    alt="Uconn Logo"
+                    src={require("assets/img/uconn.png")}
+                    style={{width:"75%"}}
                   />                  </div>
                   <div className="description">
                     <h4 className="info-title">UCONN</h4>
