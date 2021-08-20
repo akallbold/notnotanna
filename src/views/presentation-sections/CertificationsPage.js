@@ -33,7 +33,7 @@ function CertificationsPage() {
                   <div className="description">
                     <h4 className="info-title">AWS Cloud Developer</h4>
                     <p className="description">
-                      Expires 2022
+                      Expires April 2024
                     </p>
                    
                   </div>
@@ -51,7 +51,7 @@ function CertificationsPage() {
                   <div className="description">
                     <h4 className="info-title">GCP Cloud Architect</h4>
                     <p>
-                    Expires 2022
+                    Expires April 2023
                     </p>
                    
                   </div>
