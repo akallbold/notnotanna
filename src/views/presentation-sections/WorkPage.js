@@ -6,14 +6,14 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import ProjectNavbar from 'components/Navbars/ProjectNavbar'
+import SimpleNavbar from 'components/Navbars/SimpleNav'
 
 // core components
 
 function WorkPage() {
   return (
     <>
-    <ProjectNavbar/>
+    <SimpleNavbar/>
       <div className="section section-feature cd-section" id="features">
         <div className="features-1">
           <Container>

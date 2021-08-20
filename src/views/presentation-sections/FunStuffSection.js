@@ -46,8 +46,18 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-           
+              <div className="details-text">My favorite things</div>
+              <Card className="card-image">
+                <Link to="/favorite-things" target="_blank">
+                  <img
+                    alt="Chef's Kiss"
+                    src={require("assets/img/kiss.png")}
+                  />
+                </Link>
+              </Card>
             </Col>
+
+
             <Col md="4">
       
               <div className="details-text">LiveWire Homepage (professional project)</div>
@@ -71,15 +81,7 @@ function FunStuffSection() {
               </Card>
          
              
-              <div className="details-text">My favorite things</div>
-              <Card className="card-image">
-                <Link to="/favorite-things" target="_blank">
-                  <img
-                    alt="Chef's Kiss"
-                    src={require("assets/img/kiss.png")}
-                  />
-                </Link>
-              </Card>
+        
          
             </Col>
             <Col md="4">

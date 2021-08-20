@@ -1,5 +1,5 @@
 import React from "react";
-import AKBPresentationHeader from "components/Headers/PresentationHeader-akb.js";
+import Hero from "components/Headers/Hero.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 import WebDescriptionSection from "./presentation-sections/WebDescriptionSection.js";
 import FunStuffSection from "./presentation-sections/FunStuffSection.js";
@@ -34,13 +34,10 @@ function Presentation() {
   });
   return (
     <>
-      {/* <AKBColorNavbar /> */}
-      <AKBPresentationHeader />
+      <Hero />
       <WebDescriptionSection />
-      {/* <MobileDescriptionSection /> */}
       <FinalCardSection />
       <FunStuffSection />    
-      {/* <AKBFooter/> */}
       <FooterBlack />
     </>
   );

@@ -1,19 +1,16 @@
 import React from "react";
 
-// reactstrap components
 import {
   Container,
   Row,
   Col,
 } from "reactstrap";
-import ProjectNavbar from 'components/Navbars/ProjectNavbar'
-
-// core components
+import SimpleNavbar from 'components/Navbars/SimpleNav'
 
 function CertificationsPage() {
   return (
     <>
-    <ProjectNavbar/>
+    <SimpleNavbar/>
       <div className="section section-feature cd-section" id="features">
         <div className="features-1">
           <Container>

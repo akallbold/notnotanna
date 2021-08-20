@@ -6,14 +6,14 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import ProjectNavbar from 'components/Navbars/ProjectNavbar'
+import SimpleNavbar from 'components/Navbars/SimpleNav'
 
 // core components
 
 function EducationPage() {
   return (
     <>
-    <ProjectNavbar/>
+    <SimpleNavbar/>
       <div className="section section-feature cd-section" id="features">
         <div className="features-1">
           <Container>
@@ -24,7 +24,7 @@ function EducationPage() {
               </Col>
             </Row>
             <Row>
-              <Col md="3">
+              <Col >
                 <div className="info">
                   <div className="icon icon-danger">
                   <img
@@ -42,7 +42,7 @@ function EducationPage() {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col >
                 <div className="info">
                   <div className="icon icon-danger">
                   <img
@@ -60,7 +60,7 @@ function EducationPage() {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col >
                 <div className="info">
                   <div className="icon icon-danger">
                   <img

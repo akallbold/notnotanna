@@ -20,7 +20,7 @@ function FinalCardSection() {
             <Container>
               <div className="space-top" />
               <Row>
-                <Col sm="3">
+                <Col >
                 <Link to="/work" target="_blank" tag={Link}>
                   <Card data-background="color" data-color="green" >
                  
@@ -37,7 +37,7 @@ function FinalCardSection() {
                   </Card>
                   </Link>
                 </Col>
-                <Col sm="3">
+                <Col >
                 <Link to="/education" target="_blank" tag={Link}>
                   <Card data-background="color" data-color="blue">
                     <CardBody className="text-center">
@@ -52,7 +52,7 @@ function FinalCardSection() {
                   </Card>
                   </Link>
                 </Col>
-                <Col sm="3">
+                <Col >
                 <Link to="/certifications" target="_blank" tag={Link}>
                   <Card data-background="color" data-color="purple" >
                     <CardBody className="text-center">
@@ -67,7 +67,7 @@ function FinalCardSection() {
                   </Card>
                   </Link>
                 </Col>
-                <Col sm="3">
+                {/* <Col sm="3">
                   <Card data-background="color" data-color="brown">
                     <CardBody className="text-center">
                       <div className="card-icon">
@@ -79,7 +79,7 @@ function FinalCardSection() {
                       </p>
                     </CardBody>
                   </Card>
-                </Col>
+                </Col> */}
               </Row>
             </Container>
           </Row>
