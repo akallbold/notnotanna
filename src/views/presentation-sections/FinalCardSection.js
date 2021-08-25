@@ -21,7 +21,7 @@ function FinalCardSection() {
               <div className="space-top" />
               <Row>
                 <Col md="4" sm="3">
-                <Link to="/work" target="_blank" tag={Link}>
+                <Link to="/work" tag={Link}>
                   <Card data-background="color" data-color="green" >
                  
                     <CardBody className="text-center">
@@ -29,7 +29,7 @@ function FinalCardSection() {
                         <i className="nc-icon nc-badge" />
                       </div>
                       <CardTitle tag="h4">Work</CardTitle>
-                      <p className="card-description">
+                      <p className="card-description" style={{fontWeight:500}}>
                         {constants.aboutMeCards.work}
                       </p>
                     </CardBody>
@@ -38,14 +38,14 @@ function FinalCardSection() {
                   </Link>
                 </Col>
                 <Col md="4" sm="3">
-                <Link to="/education" target="_blank" tag={Link}>
+                <Link to="/education" tag={Link}>
                   <Card data-background="color" data-color="blue">
                     <CardBody className="text-center">
                       <div className="card-icon">
                         <i className="nc-icon nc-hat-3" />
                       </div>
                       <CardTitle tag="h4">Education</CardTitle>
-                      <p className="card-description">
+                      <p className="card-description" style={{fontWeight:500}}>
                       {constants.aboutMeCards.education}
                       </p>
                     </CardBody>
@@ -53,14 +53,14 @@ function FinalCardSection() {
                   </Link>
                 </Col>
                 <Col md="4" sm="3">
-                <Link to="/certifications" target="_blank" tag={Link}>
+                <Link to="/certifications" tag={Link}>
                   <Card data-background="color" data-color="purple" >
                     <CardBody className="text-center">
                       <div className="card-icon">
                         <i className="nc-icon nc-trophy" />
                       </div>
                       <CardTitle tag="h4">Certifications</CardTitle>
-                      <p className="card-description">
+                      <p className="card-description" style={{fontWeight:500}}>
                         {constants.aboutMeCards.certifications}
                       </p>
                     </CardBody>
