@@ -10,7 +10,7 @@ function FinalCardSection() {
 
   return (
     <>
-      <div className="section section-overview section-nude">
+      <div className="section section-overview section-nude" id="about-me">
         <Container fluid>
           <Row>
             <Col className="offset-md-2 text-center" md="8">
@@ -20,7 +20,7 @@ function FinalCardSection() {
             <Container>
               <div className="space-top" />
               <Row>
-                <Col md="4" sm="3">
+                <Col md="4" sm="4">
                 <Link to="/work" tag={Link}>
                   <Card data-background="color" data-color="green" >
                  
@@ -37,7 +37,7 @@ function FinalCardSection() {
                   </Card>
                   </Link>
                 </Col>
-                <Col md="4" sm="3">
+                <Col md="4" sm="4">
                 <Link to="/education" tag={Link}>
                   <Card data-background="color" data-color="blue">
                     <CardBody className="text-center">
@@ -52,7 +52,7 @@ function FinalCardSection() {
                   </Card>
                   </Link>
                 </Col>
-                <Col md="4" sm="3">
+                <Col md="4" sm="4">
                 <Link to="/certifications" tag={Link}>
                   <Card data-background="color" data-color="purple" >
                     <CardBody className="text-center">

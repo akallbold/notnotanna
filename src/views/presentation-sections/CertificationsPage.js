@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect}  from "react";
 
 import {
   Container,
@@ -6,11 +6,23 @@ import {
   Col,
 } from "reactstrap";
 import SimpleNavbar from 'components/Navbars/SimpleNav'
+import { isFirefox, isSafari } from 'react-device-detect';
 
 function CertificationsPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  const doesNavWork =() =>{
+    if (isFirefox) return false
+    if (isSafari) return false
+    return true
+  }
+
   return (
     <>
-    <SimpleNavbar/>
+    {doesNavWork() ? <SimpleNavbar/> : null}
       <div className="section section-feature cd-section" id="features">
         <div className="features-1">
           <Container>

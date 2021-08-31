@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // reactstrap components
 import {
@@ -7,13 +7,24 @@ import {
   Col,
 } from "reactstrap";
 import SimpleNavbar from 'components/Navbars/SimpleNav'
-
+import { isFirefox, isSafari } from 'react-device-detect';
 // core components
 
 function WorkPage() {
+
+  const doesNavWork =() =>{
+    if (isFirefox) return false
+    if (isSafari) return false
+    return true
+  }
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <>
-    <SimpleNavbar/>
+   {doesNavWork() ? <SimpleNavbar/> : null} 
       <div className="section section-feature cd-section" id="features">
         <div className="features-1">
           <Container>
@@ -96,9 +107,6 @@ function WorkPage() {
                 </div>
               </Col>
             </Row>
-          
-              
-         
           </Container>
         </div>
         

@@ -8,6 +8,7 @@ import FinalCardSection from "./presentation-sections/FinalCardSection.js";
 
 function Presentation() {
   document.documentElement.classList.remove("nav-open");
+
   const checkScroll = () => {
     const componentPosition = document.getElementsByClassName("add-animation");
     const scrollPosition = window.pageYOffset;
@@ -22,7 +23,7 @@ function Presentation() {
     }
   };
 
-  React.useEffect(() => {
+   React.useEffect(() => {
     document.body.classList.add("presentation-page");
     window.addEventListener("scroll", checkScroll);
     window.scrollTo(0, 0);
@@ -32,6 +33,7 @@ function Presentation() {
       window.removeEventListener("scroll", checkScroll);
     };
   });
+  
   return (
     <>
       <Hero />

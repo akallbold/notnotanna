@@ -40,7 +40,7 @@ function Stickers() {
                     <i className="fa fa-mobile" />
                   </div>
                   <div className="description">
-                    <h4><a href="https://www.linkedin.com/in/bridget-deely-b7854a98/">Bridget Deely </a> 
+                    <h4><a href="https://www.linkedin.com/in/bridget-deely-b7854a98/" target="_blank" rel="noopener noreferrer">Bridget Deely </a> 
                       and I made a sticker app for folks working in an agile environment. We have a sticker for every step of the process, the good and the not so good. 
                       Download it today for some fun agile stickers you can send via iMessage!
             

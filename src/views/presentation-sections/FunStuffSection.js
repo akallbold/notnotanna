@@ -88,7 +88,7 @@ function FunStuffSection() {
               <div className="details-text">iOS Sticker App</div>
               
               <Card className="card-image">
-                <Link href="/stickers" target="_blank">
+                <Link to="/stickers" target="_blank">
                   <img
                     alt="Two octopi pair programming"
                     src={require("assets/img/Pair_Programming.png")}

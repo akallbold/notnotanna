@@ -18,7 +18,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Redirect, Switch } from "react-router-dom";
-
 import "assets/css/bootstrap.min.css";
 import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
@@ -31,12 +30,22 @@ import EducationPage from 'views/presentation-sections/EducationPage'
 import Stickers from 'views/examples/Stickers'
 import ErrorSummary from 'views/examples/ErrorSummary'
 import ErrorPage from 'views/examples/ErrorPage'
-// import LiveWireSummary from 'views/examples/LiveWireSummary'
 import MarcusHaikuMain from "projects/marcus_haiku/MarcusHaikuMain";
 import FavoriteThings from "projects/favorite_things/FavoriteThings";
 
+function hashLinkScroll() {
+  const { hash } = window.location;
+  if (hash !== '') {
+    setTimeout(() => {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView();
+    }, 0);
+  }
+}
+
 ReactDOM.render(
-  <HashRouter>
+  <HashRouter onUpdate={hashLinkScroll}>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
