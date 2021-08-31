@@ -16,6 +16,5 @@
   "trailingComma": "es5",
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
-  "filepath": "/Users/akb/Desktop/dev/notnotanna/package.json",
-  "parser": "json-stringify"
+  "filepath": "/Users/akb/Desktop/dev/notnotanna/package.json"
 }

@@ -1,18 +1,13 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 // core components
 
 function AKBFooter() {
   return (
     <>
-   
       <footer className="footer footer-big">
         <Container>
           <Row>
@@ -34,13 +29,10 @@ function AKBFooter() {
                       Email
                     </a>
                   </li>
-                
                 </ul>
                 <hr />
-                
               </div>
             </Col>
-           
           </Row>
         </Container>
       </footer>

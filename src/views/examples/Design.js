@@ -1,13 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Card,
-  CardBody,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Card, CardBody, Container, Row, Col } from "reactstrap";
 
 // core components
 import FooterWhite from "components/Footers/FooterWhite.js";
@@ -32,13 +26,14 @@ function Design() {
               <Container>
                 <Row>
                   <Col className="ml-auto mr-auto text-center" md="6" xs="12">
-                  <h2 className="title">Filling negative space when you don't have to</h2>
-              <h5 className="description">
-Filling negative space when you (really) 
-don't have to
-              </h5>
-                   
-                   <hr/>
+                    <h2 className="title">
+                      Filling negative space when you don't have to
+                    </h2>
+                    <h5 className="description">
+                      Filling negative space when you (really) don't have to
+                    </h5>
+
+                    <hr />
                   </Col>
                 </Row>
                 <Row className="items-row">
@@ -288,7 +283,6 @@ don't have to
                                 className="img-circle img-no-padding img-responsive"
                                 src={require("assets/img/faces/erik-lucatero-2.jpg")}
                               />
-                 
                             </div>
                           </a>
                         </CardBody>

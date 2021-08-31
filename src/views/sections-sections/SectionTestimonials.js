@@ -42,8 +42,7 @@ const items = [
     caption: "",
   },
   {
-    src:
-      "https://s3.amazonaws.com/creativetim_bucket/photos/134607/thumb.?1487680276",
+    src: "https://s3.amazonaws.com/creativetim_bucket/photos/134607/thumb.?1487680276",
     content: (
       <CardBody>
         <h5 className="card-description">
@@ -67,8 +66,7 @@ const items = [
     caption: "",
   },
   {
-    src:
-      "https://s3.amazonaws.com/creativetim_bucket/photos/125268/thumb.jpeg?1497799215",
+    src: "https://s3.amazonaws.com/creativetim_bucket/photos/125268/thumb.jpeg?1497799215",
     content: (
       <CardBody>
         <h5 className="card-description">

@@ -3,7 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row } from "reactstrap";
-import {constants} from "data/constants"
+import { constants } from "data/constants";
 // core components
 
 function FooterBlack() {
@@ -25,20 +25,13 @@ function FooterBlack() {
                 </li>
                 <li>
                   <a
-                  href={constants.linkedinURL}
+                    href={constants.linkedinURL}
                     target="_blank"
                     className="mr-1"
-                  >
-                 
-                  </a>
+                  ></a>
                 </li>
                 <li>
-                  <a
-                         href={constants.linkedinURL}
-                    target="_blank"
-                  >
-                    
-                  </a>
+                  <a href={constants.linkedinURL} target="_blank"></a>
                 </li>
               </ul>
             </nav>

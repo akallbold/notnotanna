@@ -35,13 +35,13 @@ function Discover() {
           <div className="main">
             <div className="section">
               <Container>
-              <Row>
-            <div className="title text-center">
-            <h2 className="discover-title">
+                <Row>
+                  <div className="title text-center">
+                    <h2 className="discover-title">
                       <small>See latest artwork</small>
-                    </h2> 
-            </div>
-          </Row>
+                    </h2>
+                  </div>
+                </Row>
                 <Row>
                   <Col className="ml-auto mr-auto text-center" md="6" xs="12">
                     <h2 className="discover-title">
