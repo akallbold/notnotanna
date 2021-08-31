@@ -6,20 +6,23 @@ import { constants } from "data/constants";
 function FunStuffSection() {
   return (
     <>
-      <div className="section section-examples section-white" id="examples">
+      <div
+        className="section section-examples section-white"
+        id="examples project-section"
+      >
         <Container>
           <Row>
             <div className="title text-center">
               <h2 className="title">Fun Stuff!</h2>
               <h5 className="description">
-              Here are some projects I've worked on. They stem from wanting to learn new technologies for work to pure whimsy. Enjoy!
-
+                Here are some projects I've worked on. They stem from wanting to
+                learn new technologies for work to pure whimsy. Enjoy!
               </h5>
             </div>
           </Row>
           <Row>
             <Col md="4">
-            {/* <a
+              {/* <a
                     href={constants.theHundredYearsURL}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -36,7 +39,7 @@ function FunStuffSection() {
               </Card>
              
               </a> */}
-          
+
               <div className="details-text">Error Pages</div>
               <Card className="card-image">
                 <Link to="/error-summary" target="_blank">
@@ -49,28 +52,31 @@ function FunStuffSection() {
               <div className="details-text">My favorite things</div>
               <Card className="card-image">
                 <Link to="/favorite-things" target="_blank">
-                  <img
-                    alt="Chef's Kiss"
-                    src={require("assets/img/kiss.png")}
-                  />
+                  <img alt="Chef's Kiss" src={require("assets/img/kiss.png")} />
                 </Link>
               </Card>
             </Col>
 
-
             <Col md="4">
-      
-              <div className="details-text">LiveWire Homepage (professional project)</div>
-                  <a href={constants.livewireURL} target="_blank" rel="noopener noreferrer">
-              <Card className="card-image card-hover-effect">
+              <div className="details-text">
+                LiveWire Homepage (professional project)
+              </div>
+              <a
+                href={constants.livewireURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="card-image card-hover-effect">
                   <img
                     alt="livewire homepage"
                     src={require("assets/img/livewire-homepage.png")}
                   />
-              </Card>
-                  </a>
-             
-              <div className="details-text">Marcus Aurelius Haiku Generator</div>
+                </Card>
+              </a>
+
+              <div className="details-text">
+                Marcus Aurelius Haiku Generator
+              </div>
               <Card className="card-image">
                 <Link to="/meditations" target="_blank">
                   <img
@@ -79,14 +85,10 @@ function FunStuffSection() {
                   />
                 </Link>
               </Card>
-         
-             
-        
-         
             </Col>
             <Col md="4">
               <div className="details-text">iOS Sticker App</div>
-              
+
               <Card className="card-image">
                 <Link to="/stickers" target="_blank">
                   <img

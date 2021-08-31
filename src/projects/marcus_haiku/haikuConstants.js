@@ -1,40 +1,38 @@
- import {meditationsBySyllable} from "./meditations"
- 
- const syllableMapper = [
-    "oneSyllable",
-    "twoSyllables",
-    "threeSyllables",
-    "fourSyllables",
-    "fiveSyllables"
-  ];
+import { meditationsBySyllable } from "./meditations";
 
-  const randomNumberGenerator = max => Math.ceil(Math.random() * max);
+const syllableMapper = [
+  "oneSyllable",
+  "twoSyllables",
+  "threeSyllables",
+  "fourSyllables",
+  "fiveSyllables",
+];
 
-  const wordPicker = numOfSyllables => {
-    const random = randomNumberGenerator(
-      meditationsBySyllable[numOfSyllables].length - 1
-    );
-    return meditationsBySyllable[numOfSyllables][random];
-  };
+const randomNumberGenerator = (max) => Math.ceil(Math.random() * max);
 
-  export const emptyHaiku = {
-    lineOne: "",
-    lineTwo: "",
-    lineThree: ""
-  };
+const wordPicker = (numOfSyllables) => {
+  const random = randomNumberGenerator(
+    meditationsBySyllable[numOfSyllables].length - 1
+  );
+  return meditationsBySyllable[numOfSyllables][random];
+};
 
-  export const lineGenerator = startingSyllableCount => {
-    let line = "";
-    let syllablesLeftInLine = startingSyllableCount;
-    while (syllablesLeftInLine > 0) {
-      let syllablesForNextLine = randomNumberGenerator(syllablesLeftInLine);
-      while (syllablesForNextLine > 5) {
-        syllablesForNextLine = randomNumberGenerator(syllablesLeftInLine);
-      }
-      line += `${wordPicker(syllableMapper[syllablesForNextLine - 1])} `;
-      syllablesLeftInLine -= syllablesForNextLine;
+export const emptyHaiku = {
+  lineOne: "",
+  lineTwo: "",
+  lineThree: "",
+};
+
+export const lineGenerator = (startingSyllableCount) => {
+  let line = "";
+  let syllablesLeftInLine = startingSyllableCount;
+  while (syllablesLeftInLine > 0) {
+    let syllablesForNextLine = randomNumberGenerator(syllablesLeftInLine);
+    while (syllablesForNextLine > 5) {
+      syllablesForNextLine = randomNumberGenerator(syllablesLeftInLine);
     }
-    return line;
-  };
-
-  
+    line += `${wordPicker(syllableMapper[syllablesForNextLine - 1])} `;
+    syllablesLeftInLine -= syllablesForNextLine;
+  }
+  return line;
+};

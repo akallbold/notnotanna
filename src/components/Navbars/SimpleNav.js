@@ -3,19 +3,13 @@ import { Link, useHistory } from "react-router-dom";
 import classnames from "classnames";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
-import {
-  Collapse,
-  NavbarBrand,
-  Navbar,
-  Nav,
-  Container,
-} from "reactstrap";
+import { Collapse, NavbarBrand, Navbar, Nav, Container } from "reactstrap";
 
 function SimpleNav(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [bodyClick, setBodyClick] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
-  const routerHistory = useHistory()
+  const routerHistory = useHistory();
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -40,7 +34,10 @@ function SimpleNav(props) {
     };
   });
 
-  const handleClick=()=>routerHistory.goBack()
+  const handleClick = () => {
+    console.log("routerhistry: ", routerHistory);
+    routerHistory.goBack();
+  };
 
   return (
     <>
@@ -60,17 +57,19 @@ function SimpleNav(props) {
         id="navbar-main"
       >
         <Container>
-          <div className="navbar-translate" >
-            <NavbarBrand id="navbar-brand"
-            onClick={handleClick}
-            to={{pathname: "/"}}
-             tag={Link} style={{color:"black"}}> 
-            Back
+          <div className="navbar-translate">
+            <NavbarBrand
+              id="navbar-brand"
+              onClick={handleClick}
+              to={{ pathname: "/", hash: props.altNav || "" }}
+              tag={Link}
+              style={{ color: props.white ? "white" : "black" }}
+            >
+              Back
             </NavbarBrand>
           </div>
           <Collapse navbar isOpen={collapseOpen}>
-            <Nav className="ml-auto" navbar>
-            </Nav>
+            <Nav className="ml-auto" navbar></Nav>
           </Collapse>
         </Container>
       </Navbar>

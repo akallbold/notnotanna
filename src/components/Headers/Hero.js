@@ -9,23 +9,22 @@ function Hero() {
         <div
           className="page-header section-dark test"
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/city.png") + ")",
+            backgroundImage: "url(" + require("assets/img/city.png") + ")",
           }}
         >
-          <div className="content-center" >
-            <Container> 
+          <div className="content-center">
+            <Container>
               <div className="title-brand">
-                <h1 className="presentation-title test" 
-                style={{fontSize:"5em", color:"white"}}
-                > 
-               Welcome to my site
-               </h1>
-                <div style={{height:"40px"}}></div>
+                <h1
+                  className="presentation-title test"
+                  style={{ fontSize: "5em", color: "white" }}
+                >
+                  Welcome to my site
+                </h1>
+                <div style={{ height: "40px" }}></div>
               </div>
             </Container>
           </div>
-    
         </div>
       </div>
     </>

@@ -66,11 +66,13 @@ function AKBColorNavbar() {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" to="www.linkedin.com/akallenbornbolden" tag={Link}>
+            <NavbarBrand
+              id="navbar-brand"
+              to="www.linkedin.com/akallenbornbolden"
+              tag={Link}
+            >
               AKB
             </NavbarBrand>
-       
-         
           </div>
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
@@ -199,7 +201,6 @@ function AKBColorNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-   
             </Nav>
           </Collapse>
         </Container>

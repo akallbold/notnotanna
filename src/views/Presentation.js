@@ -23,7 +23,7 @@ function Presentation() {
     }
   };
 
-   React.useEffect(() => {
+  React.useEffect(() => {
     document.body.classList.add("presentation-page");
     window.addEventListener("scroll", checkScroll);
     window.scrollTo(0, 0);
@@ -33,13 +33,13 @@ function Presentation() {
       window.removeEventListener("scroll", checkScroll);
     };
   });
-  
+
   return (
     <>
       <Hero />
       <WebDescriptionSection />
       <FinalCardSection />
-      <FunStuffSection />    
+      <FunStuffSection />
       <FooterBlack />
     </>
   );
