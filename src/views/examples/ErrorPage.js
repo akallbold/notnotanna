@@ -21,7 +21,7 @@ function ErrorPage(props) {
 console.log("location.state", location.state)
   return (
     <>
-      <SimpleNav/>
+      <SimpleNav white/>
       <div
         className="background-img"
         style={{

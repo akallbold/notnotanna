@@ -22,7 +22,7 @@ function ErrorSummary() {
   });
   return (
     <>
-      <SimpleNav/>
+      <SimpleNav white/>
       <div
         className="background-img"
         style={{
@@ -42,10 +42,10 @@ function ErrorSummary() {
             </h4>
           </Row> */}
           <Row>
-            <h1 class="title">
+            <h1 className="title">
               ERROR
               <br />
-              <p class="error-msg"style={{"font-size":"20%"}}>            
+              <p className="error-msg"style={{"fontSize":"20%"}}>            
               Error pages are often viewed by people without a background in web-development. 
               These error pages are friendly for all web users and also suggest next steps. 
               </p>
