@@ -16,7 +16,6 @@ function SimpleNav(props) {
   const [bodyClick, setBodyClick] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const routerHistory = useHistory()
-  const location = useLocation()
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
