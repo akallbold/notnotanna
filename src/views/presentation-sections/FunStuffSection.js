@@ -42,7 +42,7 @@ function FunStuffSection() {
 
               <div className="details-text">Error Pages</div>
               <Card className="card-image">
-                <Link to="/error-summary" target="_blank">
+                <Link to="/error-summary">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/examples/422.png")}
@@ -51,7 +51,7 @@ function FunStuffSection() {
               </Card>
               <div className="details-text">My favorite things</div>
               <Card className="card-image">
-                <Link to="/favorite-things" target="_blank">
+                <Link to="/favorite-things">
                   <img alt="Chef's Kiss" src={require("assets/img/kiss.png")} />
                 </Link>
               </Card>
@@ -78,7 +78,7 @@ function FunStuffSection() {
                 Marcus Aurelius Haiku Generator
               </div>
               <Card className="card-image">
-                <Link to="/meditations" target="_blank">
+                <Link to="/meditations">
                   <img
                     alt="Marcus Aurelius"
                     src={require("assets/img/marcus.jpg")}
@@ -90,7 +90,7 @@ function FunStuffSection() {
               <div className="details-text">iOS Sticker App</div>
 
               <Card className="card-image">
-                <Link to="/stickers" target="_blank">
+                <Link to="/stickers">
                   <img
                     alt="Two octopi pair programming"
                     src={require("assets/img/Pair_Programming.png")}
@@ -99,7 +99,7 @@ function FunStuffSection() {
               </Card>
               <div className="details-text">Falling Resume</div>
               <Card className="card-image">
-                <Link to="/profile-page" target="_blank">
+                <Link to="/falling-resume">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/examples/profile.png")}

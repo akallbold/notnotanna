@@ -32,6 +32,7 @@ import ErrorSummary from "views/examples/ErrorSummary";
 import ErrorPage from "views/examples/ErrorPage";
 import MarcusHaikuMain from "projects/marcus_haiku/MarcusHaikuMain";
 import FavoriteThings from "projects/favorite_things/FavoriteThings";
+import FallingResume from "projects/falling_resume/FallingResumeMain";
 
 function hashLinkScroll() {
   const { hash } = window.location;
@@ -67,6 +68,10 @@ ReactDOM.render(
       <Route
         path="/meditations"
         render={(props) => <MarcusHaikuMain {...props} />}
+      />
+      <Route
+        path="/falling-resume"
+        render={(props) => <FallingResume {...props} />}
       />
       {/* <Route path="/livewire-summary" render={(props) => <LiveWireSummary  {...props}/>} /> */}
       <Route
