@@ -24,7 +24,7 @@ const FavoriteThings = () => {
   return (
     <>
       <Container className="marcus-container">
-        <SimpleNav altNav="project-section" />
+        <SimpleNav />
         <div style={{ height: containerHeights.large }} />
         <div className="marcus-quote-box">
           <blockquote className="blockquote">
