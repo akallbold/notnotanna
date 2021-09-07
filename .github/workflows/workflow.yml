@@ -2,7 +2,7 @@ name: Website - GCP
 on:
   push:
     branches:
-      - master
+      - main
 env:
   GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
 jobs:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          ref: refs/heads/master
+          ref: refs/heads/main
           fetch-depth: 1
       - uses: actions/setup-node@v1
         with:
