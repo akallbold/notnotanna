@@ -14,7 +14,8 @@ function AKBSectionSections() {
             <div className="section-description text-center">
               <h2 className="title">Fun Stuff</h2>
               <h5 className="description">
-                Here are some projects I've worked on. They stem from wanting to learn new technologies for work to pure whimsy. Enjoy!
+                Here are some projects I've worked on. They stem from wanting to
+                learn new technologies for work to pure whimsy. Enjoy!
               </h5>
               <br />
               {/* <Button
@@ -36,7 +37,9 @@ function AKBSectionSections() {
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/header-1.jpg")}
-                    onClick={()=>{console.log("clicked")}}
+                    onClick={() => {
+                      console.log("clicked");
+                    }}
                   />
                 </Col>
                 <Col md="3">

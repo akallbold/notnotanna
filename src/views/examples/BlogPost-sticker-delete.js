@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import data from "data/blogPostData.js"
+import data from "data/blogPostData.js";
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import BlogPostHeader from "components/Headers/BlogPostHeader.js";
@@ -18,12 +18,11 @@ function BlogPost() {
     };
   });
 
-  
   return (
     <>
       <ColorNavbar />
-      <BlogPostHeader data={data}/>
-     
+      <BlogPostHeader data={data} />
+
       <FooterGray />
     </>
   );

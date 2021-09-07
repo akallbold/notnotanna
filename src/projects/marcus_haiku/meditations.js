@@ -399,7 +399,7 @@ export const meditationsBySyllable = {
     "dream",
     "whence",
     "harm",
-    "why"
+    "why",
   ],
   twoSyllables: [
     "verus",
@@ -834,7 +834,7 @@ export const meditationsBySyllable = {
     "allotted",
     "coming",
     "waiting",
-    "changing"
+    "changing",
   ],
   threeSyllables: [
     "grandfather",
@@ -1082,7 +1082,7 @@ export const meditationsBySyllable = {
     "accepting",
     "wherever",
     "finally",
-    "carnuntum"
+    "carnuntum",
   ],
   fourSyllables: [
     "reputation",
@@ -1204,7 +1204,7 @@ export const meditationsBySyllable = {
     "composition",
     "putrefaction",
     "dissolution",
-    "apprehension"
+    "apprehension",
   ],
   fiveSyllables: [
     "miracle-workers",
@@ -1227,8 +1227,8 @@ export const meditationsBySyllable = {
     "particularly",
     "imagination",
     "dissatisfaction",
-    "insincerely"
-  ]
+    "insincerely",
+  ],
 };
 
 // const syllableMapper = [

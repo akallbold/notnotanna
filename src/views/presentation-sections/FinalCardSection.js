@@ -3,11 +3,10 @@ import React from "react";
 // reactstrap components
 import { Link } from "react-router-dom";
 
-import { Card, CardBody, CardTitle, Container, Row, Col} from "reactstrap";
-import {constants} from "data/constants"
+import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import { constants } from "data/constants";
 
 function FinalCardSection() {
-
   return (
     <>
       <div className="section section-overview section-nude" id="about-me">
@@ -21,50 +20,57 @@ function FinalCardSection() {
               <div className="space-top" />
               <Row>
                 <Col md="4" sm="4">
-                <Link to="/work" tag={Link}>
-                  <Card data-background="color" data-color="green" >
-                 
-                    <CardBody className="text-center">
-                      <div className="card-icon">
-                        <i className="nc-icon nc-badge" />
-                      </div>
-                      <CardTitle tag="h4">Work</CardTitle>
-                      <p className="card-description" style={{fontWeight:500}}>
-                        {constants.aboutMeCards.work}
-                      </p>
-                    </CardBody>
-          
-                  </Card>
+                  <Link to="/work" tag={Link}>
+                    <Card data-background="color" data-color="green">
+                      <CardBody className="text-center">
+                        <div className="card-icon">
+                          <i className="nc-icon nc-badge" />
+                        </div>
+                        <CardTitle tag="h4">Work</CardTitle>
+                        <p
+                          className="card-description"
+                          style={{ fontWeight: 500 }}
+                        >
+                          {constants.aboutMeCards.work}
+                        </p>
+                      </CardBody>
+                    </Card>
                   </Link>
                 </Col>
                 <Col md="4" sm="4">
-                <Link to="/education" tag={Link}>
-                  <Card data-background="color" data-color="blue">
-                    <CardBody className="text-center">
-                      <div className="card-icon">
-                        <i className="nc-icon nc-hat-3" />
-                      </div>
-                      <CardTitle tag="h4">Education</CardTitle>
-                      <p className="card-description" style={{fontWeight:500}}>
-                      {constants.aboutMeCards.education}
-                      </p>
-                    </CardBody>
-                  </Card>
+                  <Link to="/education" tag={Link}>
+                    <Card data-background="color" data-color="blue">
+                      <CardBody className="text-center">
+                        <div className="card-icon">
+                          <i className="nc-icon nc-hat-3" />
+                        </div>
+                        <CardTitle tag="h4">Education</CardTitle>
+                        <p
+                          className="card-description"
+                          style={{ fontWeight: 500 }}
+                        >
+                          {constants.aboutMeCards.education}
+                        </p>
+                      </CardBody>
+                    </Card>
                   </Link>
                 </Col>
                 <Col md="4" sm="4">
-                <Link to="/certifications" tag={Link}>
-                  <Card data-background="color" data-color="purple" >
-                    <CardBody className="text-center">
-                      <div className="card-icon">
-                        <i className="nc-icon nc-trophy" />
-                      </div>
-                      <CardTitle tag="h4">Certifications</CardTitle>
-                      <p className="card-description" style={{fontWeight:500}}>
-                        {constants.aboutMeCards.certifications}
-                      </p>
-                    </CardBody>
-                  </Card>
+                  <Link to="/certifications" tag={Link}>
+                    <Card data-background="color" data-color="purple">
+                      <CardBody className="text-center">
+                        <div className="card-icon">
+                          <i className="nc-icon nc-trophy" />
+                        </div>
+                        <CardTitle tag="h4">Certifications</CardTitle>
+                        <p
+                          className="card-description"
+                          style={{ fontWeight: 500 }}
+                        >
+                          {constants.aboutMeCards.certifications}
+                        </p>
+                      </CardBody>
+                    </Card>
                   </Link>
                 </Col>
                 {/* <Col sm="3">

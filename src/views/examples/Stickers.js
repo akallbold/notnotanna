@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Card,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Card, Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import SimpleNav from "components/Navbars/SimpleNav.js";
 
@@ -40,35 +35,43 @@ function Stickers() {
                     <i className="fa fa-mobile" />
                   </div>
                   <div className="description">
-                    <h4><a href="https://www.linkedin.com/in/bridget-deely-b7854a98/" target="_blank" rel="noopener noreferrer">Bridget Deely </a> 
-                      and I made a sticker app for folks working in an agile environment. We have a sticker for every step of the process, the good and the not so good. 
-                      Download it today for some fun agile stickers you can send via iMessage!
-            
+                    <h4>
+                      <a
+                        href="https://www.linkedin.com/in/bridget-deely-b7854a98/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Bridget Deely{" "}
+                      </a>
+                      and I made a sticker app for folks working in an agile
+                      environment. We have a sticker for every step of the
+                      process, the good and the not so good. Download it today
+                      for some fun agile stickers you can send via iMessage!
                     </h4>
-             
                   </div>
                 </div>
-               
               </Col>
               <Col className="mr-auto" lg="6" md="6" sm="5" xs="12">
-              <div className="details-text"> </div>
-              
-              <Card className="card-image" >
-                <Link href="https://apps.apple.com/app/id1501776587" target="_blank">
-                  <img
-                    alt="Two octopi pair programming"
-                    src={require("assets/img/Pair_Programming.png")}
-                  />
+                <div className="details-text"> </div>
+
+                <Card className="card-image">
+                  <Link
+                    href="https://apps.apple.com/app/id1501776587"
+                    target="_blank"
+                  >
                     <img
-                    alt="App store badge"
-                    src={require("assets/img/app-store.jpg")}
-                  />
-                </Link>
-              </Card>
+                      alt="Two octopi pair programming"
+                      src={require("assets/img/Pair_Programming.png")}
+                    />
+                    <img
+                      alt="App store badge"
+                      src={require("assets/img/app-store.jpg")}
+                    />
+                  </Link>
+                </Card>
               </Col>
             </Row>
           </Container>
-  
         </div>
       </div>
     </>

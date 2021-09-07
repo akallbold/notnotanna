@@ -18,7 +18,7 @@ function Error404() {
   });
   return (
     <>
-      <SimpleNav/>
+      <SimpleNav />
       <div
         className="background-img"
         style={{

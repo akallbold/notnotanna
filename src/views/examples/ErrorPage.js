@@ -5,7 +5,7 @@ import { Container, Row } from "reactstrap";
 import { useLocation } from "react-router-dom";
 // core components
 import SimpleNav from "components/Navbars/SimpleNav.js";
-import { isFirefox, isSafari } from "react-device-detect";
+import { doesNavWork } from "utils";
 
 function ErrorPage(props) {
   document.documentElement.classList.remove("nav-open");
@@ -21,12 +21,6 @@ function ErrorPage(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const doesNavWork = () => {
-    if (isFirefox) return false;
-    if (isSafari) return false;
-    return true;
-  };
 
   const location = useLocation();
   return (

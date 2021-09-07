@@ -7,8 +7,8 @@ import { Button } from "reactstrap";
 
 function BlogPostHeader(props) {
   let pageHeader = React.createRef();
-  const {data} = props
-  const {buttonText} = data
+  const { data } = props;
+  const { buttonText } = data;
   React.useEffect(() => {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
@@ -45,7 +45,7 @@ function BlogPostHeader(props) {
               href="https://apps.apple.com/app/id1501776587"
               size="lg"
             >
-              {buttonText? buttonText : "Download it here"}
+              {buttonText ? buttonText : "Download it here"}
             </Button>
           </div>
         </div>
