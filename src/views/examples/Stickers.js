@@ -42,7 +42,7 @@ function Stickers() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Bridget Deely{" "}
+                        Bridget Deely
                       </a>
                       and I made a sticker app for folks working in an agile
                       environment. We have a sticker for every step of the
@@ -55,21 +55,24 @@ function Stickers() {
               <Col className="mr-auto" lg="6" md="6" sm="5" xs="12">
                 <div className="details-text"> </div>
 
-                <Card className="card-image">
-                  <Link
-                    href="https://apps.apple.com/app/id1501776587"
-                    target="_blank"
-                  >
+                <a
+                  href="https://apps.apple.com/app/id1501776587"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card className="card-image">
                     <img
                       alt="Two octopi pair programming"
                       src={require("assets/img/Pair_Programming.png")}
                     />
+                    <div style={{ height: "20px" }} />
                     <img
                       alt="App store badge"
                       src={require("assets/img/app-store.jpg")}
+                      style={{ alignSelf: "center" }}
                     />
-                  </Link>
-                </Card>
+                  </Card>
+                </a>
               </Col>
             </Row>
           </Container>
