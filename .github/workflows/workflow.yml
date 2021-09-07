@@ -21,7 +21,6 @@ jobs:
         with:
           path: src/node_modules
           key: ${{ runner.os }}-js-${{ hashFiles('src/package-lock.json') }}
-      - run: git config --global init.defaultBranch main
       - run: npm install
       - run: npm run build
       - uses: google-github-actions/setup-gcloud@master
