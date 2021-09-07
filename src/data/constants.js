@@ -12,4 +12,5 @@ export const constants = {
   theHundredYearsURL:
     "https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/",
   livewireURL: "https://www.livewire.com/",
+  bridgetLinkedin: "https://www.linkedin.com/in/bridget-d-b7854a98/",
 };

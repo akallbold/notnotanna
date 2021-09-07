@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import SimpleNav from "components/Navbars/SimpleNav.js";
+import { constants } from "data/constants";
 
 function Stickers() {
   document.documentElement.classList.remove("nav-open");
@@ -37,7 +38,7 @@ function Stickers() {
                   <div className="description">
                     <h4>
                       <a
-                        href="https://www.linkedin.com/in/bridget-deely-b7854a98/"
+                        href={constants.bridgetLinkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
