@@ -29,10 +29,9 @@ function ErrorPage(props) {
   };
 
   const location = useLocation();
-  console.log("location.state", location.state);
   return (
     <>
-      {doesNavWork ? <SimpleNav white /> : null}
+      {doesNavWork() ? <SimpleNav white /> : null}
       <div
         className="background-img"
         style={{
@@ -43,21 +42,21 @@ function ErrorPage(props) {
         <div className="filter" />
         <Container>
           <Row>
-            <h1 class="title">
+            <h1 className="title">
               {location.state && location.state.code
                 ? location.state.code
                 : "YIKES"}
             </h1>
             <br />
             <p
-              class="error-msg-akb"
+              className="error-msg-akb"
               style={{ color: "white", fontSize: "20px" }}
             >
               {location.state && location.state.text
                 ? location.state.text
                 : "An error loading the error? Oh the irony!"}
             </p>
-            {location.state && location.state.link ? (
+            {/* {location.state && location.state.link ? (
               <div>
                 <br />
                 <a
@@ -68,7 +67,7 @@ function ErrorPage(props) {
                   <p>Learn more here.</p>
                 </a>
               </div>
-            ) : null}
+            ) : null} */}
           </Row>
 
           {/* <Row >
