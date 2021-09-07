@@ -9,9 +9,19 @@ function FunStuffCard(props) {
     <>
       <div className="details-text">{data.title}</div>
       <Card className="card-image">
-        <Link to={data.linkWhenClicked}>
-          <img alt={data.imgAlt} src={data.img} />
-        </Link>
+        {data.external ? (
+          <a
+            href={data.linkWhenClicked}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img alt={data.imgAlt} src={data.img} />
+          </a>
+        ) : (
+          <Link to={data.linkWhenClicked}>
+            <img alt={data.imgAlt} src={data.img} />
+          </Link>
+        )}
       </Card>
     </>
   );

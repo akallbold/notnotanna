@@ -5,6 +5,7 @@ export const TheHundredYears = {
   linkWhenClicked: constants.theHundredYearsURL,
   img: "/images/github-cover.JPG",
   imgAlt: "sad looking github sign",
+  external: true,
 };
 
 export const ErrorPages = {
@@ -12,6 +13,7 @@ export const ErrorPages = {
   linkWhenClicked: constants.theHundredYearsURL,
   img: "/images/422.png",
   imgAlt: "example of an error page",
+  external: false,
 };
 
 export const LiveWire = {
@@ -19,6 +21,7 @@ export const LiveWire = {
   linkWhenClicked: constants.livewireURL,
   img: "/images/livewire-homepage.png",
   imgAlt: "livewire homepage",
+  external: true,
 };
 
 export const Haikus = {
@@ -26,6 +29,7 @@ export const Haikus = {
   linkWhenClicked: "/meditations",
   img: "/images/marcus.jpg",
   imgAlt: "Marcus Aurelius",
+  external: false,
 };
 
 export const StickerApp = {
@@ -33,6 +37,7 @@ export const StickerApp = {
   linkWhenClicked: "/stickers",
   img: "/images/Pair_Programming.png",
   imgAlt: "Two octopi pair programming",
+  external: false,
 };
 
 export const FallingResume = {
@@ -40,4 +45,5 @@ export const FallingResume = {
   linkWhenClicked: "/falling-resume",
   img: "assets/img/presentation-page/examples/profile.png",
   imgAlt: "Screenshot of falling resume",
+  external: false,
 };
