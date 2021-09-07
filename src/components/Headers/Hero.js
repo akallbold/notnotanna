@@ -19,7 +19,7 @@ function Hero() {
                   className="presentation-title test"
                   style={{ fontSize: "5em", color: "white" }}
                 >
-                  Welcome to my site
+                  Turn the negative into a positive picture
                 </h1>
                 <div style={{ height: "40px" }}></div>
               </div>
