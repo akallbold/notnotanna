@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 
-// reactstrap components
 import { Container, Row, Col } from "reactstrap";
 import SimpleNavbar from "components/Navbars/SimpleNav";
 import { doesNavWork } from "utils";
-
-// core components
 
 function EducationPage() {
   useEffect(() => {

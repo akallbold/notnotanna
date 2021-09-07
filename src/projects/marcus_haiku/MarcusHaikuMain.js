@@ -4,6 +4,7 @@ import { Button, Container } from "reactstrap";
 import SimpleNav from "components/Navbars/SimpleNav.js";
 import "./styles.css";
 import { doesNavWork } from "utils";
+import { containerHeights } from "data/stylingConstants";
 
 const MarcusHaikuMain = () => {
   const [haiku, setHaiku] = useState(emptyHaiku);
@@ -16,7 +17,6 @@ const MarcusHaikuMain = () => {
     currentHaiku.lineThree = lineGenerator(5);
     setHaiku({ ...currentHaiku });
   };
-  const containerHeights = { small: "10px", medium: "20px", large: "50px" };
 
   return (
     <>

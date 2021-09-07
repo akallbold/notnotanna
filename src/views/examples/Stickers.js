@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
 import SimpleNav from "components/Navbars/SimpleNav.js";
 import { constants } from "data/constants";
+import { doesNavWork } from "utils";
+import { containerHeights } from "data/stylingConstants";
 
 function Stickers() {
   document.documentElement.classList.remove("nav-open");
@@ -18,7 +19,7 @@ function Stickers() {
   });
   return (
     <>
-      <SimpleNav />
+      {doesNavWork() ? <SimpleNav white /> : null}
       <div className="wrapper">
         <div
           className="page-header"
@@ -65,7 +66,7 @@ function Stickers() {
                       alt="Two octopi pair programming"
                       src={require("assets/img/Pair_Programming.png")}
                     />
-                    <div style={{ height: "20px" }} />
+                    <div style={{ height: containerHeights.medium }} />
                     <img
                       alt="App store badge"
                       src={require("assets/img/app-store.jpg")}

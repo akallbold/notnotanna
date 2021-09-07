@@ -4,6 +4,7 @@ import { Button, Container } from "reactstrap";
 import SimpleNav from "components/Navbars/SimpleNav.js";
 import "./styles.css";
 import { doesNavWork } from "utils";
+import { containerHeights } from "data/stylingConstants";
 
 const FavoriteThings = () => {
   const [cleanThings, setCleanThings] = useState([...favoriteThings]);
@@ -21,7 +22,6 @@ const FavoriteThings = () => {
     cleanThings.splice(randomIndex, 1);
   };
 
-  const containerHeights = { small: "10px", medium: "20px", large: "50px" };
   return (
     <>
       <Container className="marcus-container">
