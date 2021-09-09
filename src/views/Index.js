@@ -21,7 +21,6 @@ import SectionTables from "./index-sections/SectionTables.js";
 import SectionComments from "./index-sections/SectionComments.js";
 import SectionCommentsAreaSmall from "./index-sections/SectionCommentsAreaSmall.js";
 import SectionJavaScript from "./index-sections/SectionJavaScript.js";
-import SectionCards from "./index-sections/SectionCards.js";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -35,7 +34,7 @@ function Index() {
   });
   return (
     <>
-      <ColorNavbar />
+      {/* <ColorNavbar />
       <IndexHeader />
       <div className="main">
         <SectionButtons />
@@ -51,8 +50,7 @@ function Index() {
       <SectionComments />
       <SectionCommentsAreaSmall />
       <SectionJavaScript />
-      <SectionCards />
-      <FooterBlack />
+      <FooterBlack /> */}
     </>
   );
 }

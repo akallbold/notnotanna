@@ -19,7 +19,7 @@ function Hero() {
                   className="presentation-title test"
                   style={{ fontSize: "5em", color: "white" }}
                 >
-                  Thanks for stopping by
+                  Welcome to my site
                 </h1>
                 <div style={{ height: "40px" }}></div>
               </div>
