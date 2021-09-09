@@ -34,7 +34,7 @@ function Index() {
   });
   return (
     <>
-      {/* <ColorNavbar />
+      <ColorNavbar />
       <IndexHeader />
       <div className="main">
         <SectionButtons />
@@ -50,7 +50,7 @@ function Index() {
       <SectionComments />
       <SectionCommentsAreaSmall />
       <SectionJavaScript />
-      <FooterBlack /> */}
+      <FooterBlack />
     </>
   );
 }
