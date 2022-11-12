@@ -6,7 +6,6 @@
     "classnames": "2.2.6",
     "headroom.js": "0.11.0",
     "moment": "2.26.0",
-    "node-sass": "^4.14.0",
     "nouislider": "14.5.0",
     "react": "16.13.1",
     "react-bootstrap-switch": "15.5.3",
@@ -20,7 +19,7 @@
     "react-spring": "^9.2.4",
     "react-tagsinput": "3.19.0",
     "reactstrap": "8.4.1",
-    "sass": "^1.38.0"
+    "sass": "^1.56.1"
   },
   "scripts": {
     "start": "react-scripts start",
