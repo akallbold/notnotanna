@@ -47,3 +47,11 @@ export const FallingResume = {
   imgAlt: "Screenshot of falling resume",
   external: false,
 };
+
+export const ShantellTypewriter = {
+  title: "Shantell Sans Handwritten Notes",
+  linkWhenClicked: constants.shantellSansUrl,
+  img: "/images/shantell-sans.png",
+  imgAlt: "example of shantell sans font",
+  external: true,
+};

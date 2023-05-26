@@ -73,11 +73,11 @@ ReactDOM.render(
         path="/falling-resume"
         render={(props) => <FallingResume {...props} />}
       />
-      {/* <Route path="/livewire-summary" render={(props) => <LiveWireSummary  {...props}/>} /> */}
       <Route
         path="/favorite-things"
         render={(props) => <FavoriteThings {...props} />}
       />
+
       <Route path="/" render={(props) => <Home {...props} />} />
       <Redirect to="/presentation" />
     </Switch>

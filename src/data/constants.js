@@ -3,7 +3,7 @@ export const constants = {
   aboutMeCards: {
     work: "I have been a software engineer, project manager, and a product owner. This experience has given me an end to end perspective on bringing a product from idea to fruition. I am an engineer because I love coding, but have the mindset of a product owner.",
     education:
-      "I studied business in undergrad (UCONN) and grad (Yale). I've learned that engineers can build anything, but they need the resources to do so. My superpower is being able to identify and communicate technological cost/benefit tradeoffs.",
+      "I studied business in undergrad (UCONN) and grad (Yale). I've learned that engineers can build anything, but they need the resources to do so. My strength is being able to identify and communicate technological cost/benefit tradeoffs.",
     certifications:
       "Whichever technology I am working on, I seek to become certified. It's important to me to understand what the people behind the technology want me to know as well as being a part of that community.",
     walking:
@@ -13,4 +13,5 @@ export const constants = {
     "https://hundred-years-dot-the-hundred-years.uc.r.appspot.com/#/",
   livewireURL: "https://www.livewire.com/",
   bridgetLinkedin: "https://www.linkedin.com/in/bridget-d-b7854a98/",
+  shantellSansUrl: "https://monumental-mousse-05ac16.netlify.app/",
 };

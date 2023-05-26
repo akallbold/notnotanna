@@ -1,6 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { LiveWire, Haikus, StickerApp } from "data/funStuffData";
+import {
+  LiveWire,
+  Haikus,
+  ShantellTypewriter,
+  StickerApp,
+} from "data/funStuffData";
 import FunStuffCard from "./FunStuffCard";
 
 function FunStuffSection() {
@@ -22,12 +27,11 @@ function FunStuffSection() {
           </Row>
           <Row>
             <Col md="4">
-              {/* <FunStuffCard data={TheHundredYears} />
-              <FunStuffCard data={ErrorPages} /> */}
-              <FunStuffCard data={LiveWire} />
-              {/* <FunStuffCard data={FallingResume} /> */}
+              <FunStuffCard data={ShantellTypewriter} />
             </Col>
-
+            <Col md="4">
+              <FunStuffCard data={LiveWire} />
+            </Col>
             <Col md="4">
               <FunStuffCard data={Haikus} />
             </Col>
