@@ -55,3 +55,19 @@ export const ShantellTypewriter = {
   imgAlt: "example of shantell sans font",
   external: true,
 };
+
+export const NotBitly = {
+  title: "Bitly Clone",
+  linkWhenClicked: constants.notbitlyURL,
+  img: "/images/monkeycat.jpeg",
+  imgAlt: "placeholder image",
+  external: true,
+};
+
+export const AdvancedChatGPT = {
+  title: "Advanced ChatGPT Bot",
+  linkWhenClicked: "/advanced-chatgpt",
+  img: "/images/chatGPT.png",
+  imgAlt: "screenshot of ChatGPT",
+  external: true,
+};

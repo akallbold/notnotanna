@@ -5,10 +5,27 @@ import {
   Haikus,
   ShantellTypewriter,
   StickerApp,
+  NotBitly,
+  AdvancedChatGPT,
 } from "data/funStuffData";
 import FunStuffCard from "./FunStuffCard";
 
 function FunStuffSection() {
+  const projects = [
+    AdvancedChatGPT,
+    ShantellTypewriter,
+    NotBitly,
+    LiveWire,
+    Haikus,
+    StickerApp,
+  ];
+  const cards = projects.map((project) => {
+    return (
+      <Col md="4">
+        <FunStuffCard data={project} />
+      </Col>
+    );
+  });
   return (
     <>
       <div
@@ -25,20 +42,7 @@ function FunStuffSection() {
               </h5>
             </div>
           </Row>
-          <Row>
-            <Col md="4">
-              <FunStuffCard data={ShantellTypewriter} />
-            </Col>
-            <Col md="4">
-              <FunStuffCard data={LiveWire} />
-            </Col>
-            <Col md="4">
-              <FunStuffCard data={Haikus} />
-            </Col>
-            <Col md="4">
-              <FunStuffCard data={StickerApp} />
-            </Col>
-          </Row>
+          <Row>{cards}</Row>
         </Container>
       </div>
     </>

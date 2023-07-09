@@ -28,6 +28,7 @@ import CertificationsPage from "views/presentation-sections/CertificationsPage";
 import WorkPage from "views/presentation-sections/WorkPage";
 import EducationPage from "views/presentation-sections/EducationPage";
 import Stickers from "views/examples/Stickers";
+import AdvancedChatGPT from "views/examples/AdvancedChatGPT";
 import ErrorSummary from "views/examples/ErrorSummary";
 import ErrorPage from "views/examples/ErrorPage";
 import MarcusHaikuMain from "projects/marcus_haiku/MarcusHaikuMain";
@@ -60,6 +61,10 @@ ReactDOM.render(
         render={(props) => <ErrorSummary {...props} />}
       />
       <Route path="/work" render={(props) => <WorkPage {...props} />} />
+      <Route
+        path="/advanced-chatgpt"
+        render={(props) => <AdvancedChatGPT {...props} />}
+      />
       <Route path="/stickers" render={(props) => <Stickers {...props} />} />
       <Route
         path="/education"
